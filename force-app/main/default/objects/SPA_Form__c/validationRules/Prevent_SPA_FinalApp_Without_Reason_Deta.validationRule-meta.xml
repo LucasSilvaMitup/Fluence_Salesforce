@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_SPA_FinalApp_Without_Reason_Deta</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(ISPICKVAL(Status__c,&quot;Approved&quot;),ISPICKVAL(Status__c,&quot;Denied&quot;)),ISPICKVAL(Stage__c,&quot;Final Approval&quot;),ISBLANK(Final_Approval_Reason_Details__c))</errorConditionFormula>
+    <errorDisplayField>Final_Approval_Reason_Details__c</errorDisplayField>
+    <errorMessage>Final Approval Reason Details should be filled before change SPA Form status to Approved or Denied.</errorMessage>
+</ValidationRule>

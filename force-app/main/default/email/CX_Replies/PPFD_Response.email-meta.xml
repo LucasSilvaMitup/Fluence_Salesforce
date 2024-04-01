@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>PPFD Response</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PPFD Response</name>
+    <style>none</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>Hello {!Case.Contact},
+
+My name is Xxx_Name_xxX, with Fluence Customer Experience. Thank you for inquiring about our fixtures PPFD! We do not have any general PPFD data available on our website or in our fixtures&apos; spec sheets. PPFD is calculated based on the mounting height and size of the lit area, as well as surrounding factors such as aisle width (if using racks), distance to the walls, and light reflectance of the walls. These surrounding factors could have a major impact on PPFD level and uniformity. This is why we are cautious to make generic claims regarding PPFD vs application. To assist you in estimating the PPFD in your application, please provide some basic input about the grow area’s configurations.
+
+If you have any questions in the meantime, please don’t hesitate to ask.
+
+Thanks</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

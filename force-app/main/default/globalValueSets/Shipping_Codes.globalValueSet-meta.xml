@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>STD: standard shipping</fullName>
+        <default>false</default>
+        <label>STD: standard shipping</label>
+    </customValue>
+    <customValue>
+        <fullName>WC: will call</fullName>
+        <default>false</default>
+        <label>WC: will call</label>
+    </customValue>
+    <customValue>
+        <fullName>CHRA: CH Robinson Air</fullName>
+        <default>false</default>
+        <label>CHRA: CH Robinson Air</label>
+    </customValue>
+    <customValue>
+        <fullName>CHRS: CH Robinson Sea</fullName>
+        <default>false</default>
+        <label>CHRS: CH Robinson Sea</label>
+    </customValue>
+    <customValue>
+        <fullName>FESO: Standard overnight</fullName>
+        <default>false</default>
+        <label>FESO: Standard overnight</label>
+    </customValue>
+    <customValue>
+        <fullName>FEO: priority overnight</fullName>
+        <default>false</default>
+        <label>FEO: priority overnight</label>
+    </customValue>
+    <customValue>
+        <fullName>FEG2: FedEx 2Day</fullName>
+        <default>false</default>
+        <label>FEG2: FedEx 2Day</label>
+    </customValue>
+    <customValue>
+        <fullName>DHLW: International air</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DHLW: International air</label>
+    </customValue>
+    <customValue>
+        <fullName>DDPC: International sea</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DDPC: International sea</label>
+    </customValue>
+    <masterLabel>Shipping Codes</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

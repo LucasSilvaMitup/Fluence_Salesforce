@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>LDRF Room</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>LDRF Rooms</value>
+    </caseValues>
+    <layouts>
+        <layout>Greenhouse Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Electrical Specifications</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lighting Needs</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Structure Measurements</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Indoor Layout</layout>
+        <sections>
+            <label></label>
+            <section>Bench/Rack Measurements</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Electrical Specifications</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lighting Needs</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Structure Measurements</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>LDRF Layout</layout>
+        <sections>
+            <label></label>
+            <section>Bench/Rack Measurements</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Electrical Specifications</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lightning Needs</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Structure</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Greenhouse</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Indoor</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Aisle_Distance_Required_Position_Static</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Check_Mixed_System_Greenhouse_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Check_Mixed_System_Indoor_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>DC_Flex_n_Wireless_Flex_Dim_cant_coexist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Number_Distance_Tiers_Levels_Multi</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Panel_Mount_mandatory_for_AC_Flex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Posiiton_Rolling_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Requested_Dimming_Zones_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Room_Length_and_width_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Wireless_Flex_Dim_without_Commissioning</name>
+    </validationRules>
+</CustomObjectTranslation>

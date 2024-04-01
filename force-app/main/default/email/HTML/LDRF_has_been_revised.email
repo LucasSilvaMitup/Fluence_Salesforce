@@ -1,0 +1,8 @@
+A revision has been made to an existing LDRF form. Please review the LDRF and check for any notes.
+
+Company: {!Account.Name}
+Opportunity: {!Case.Opportunity__c} 
+Priority: {!Case.Priority}
+Case #: {!Case.CaseNumber}
+
+Click on the link to access the case: {!Case.Link}

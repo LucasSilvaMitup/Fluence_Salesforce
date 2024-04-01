@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Group__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Product_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RAY22</fullName>
+                <default>false</default>
+                <label>RAY22</label>
+            </value>
+            <value>
+                <fullName>RAY44</fullName>
+                <default>false</default>
+                <label>RAY44</label>
+            </value>
+            <value>
+                <fullName>RAY66</fullName>
+                <default>false</default>
+                <label>RAY66</label>
+            </value>
+            <value>
+                <fullName>RAZR 2</fullName>
+                <default>false</default>
+                <label>RAZR 2</label>
+            </value>
+            <value>
+                <fullName>RAZR M</fullName>
+                <default>false</default>
+                <label>RAZR M</label>
+            </value>
+            <value>
+                <fullName>RAZRx</fullName>
+                <default>false</default>
+                <label>RAZRx</label>
+            </value>
+            <value>
+                <fullName>SPYDRx</fullName>
+                <default>false</default>
+                <label>SPYDRx</label>
+            </value>
+            <value>
+                <fullName>SPYDRx PLUS</fullName>
+                <default>false</default>
+                <label>SPYDRx PLUS</label>
+            </value>
+            <value>
+                <fullName>SPYDR 2x</fullName>
+                <default>false</default>
+                <label>SPYDR 2x</label>
+            </value>
+            <value>
+                <fullName>SPYDR 2x33</fullName>
+                <default>false</default>
+                <label>SPYDR 2x33</label>
+            </value>
+            <value>
+                <fullName>SPYDR 2P</fullName>
+                <default>false</default>
+                <label>SPYDR 2P</label>
+            </value>
+            <value>
+                <fullName>SPYDR 2i</fullName>
+                <default>false</default>
+                <label>SPYDR 2i</label>
+            </value>
+            <value>
+                <fullName>SPYDR 2i33</fullName>
+                <default>false</default>
+                <label>SPYDR 2i33</label>
+            </value>
+            <value>
+                <fullName>SPYDR 2i40</fullName>
+                <default>false</default>
+                <label>SPYDR 2i40</label>
+            </value>
+            <value>
+                <fullName>SPYDR 2H</fullName>
+                <default>false</default>
+                <label>SPYDR 2H</label>
+            </value>
+            <value>
+                <fullName>VYPRx</fullName>
+                <default>false</default>
+                <label>VYPRx</label>
+            </value>
+            <value>
+                <fullName>VYPRx PLUS</fullName>
+                <default>false</default>
+                <label>VYPRx PLUS</label>
+            </value>
+            <value>
+                <fullName>VYPR 2x</fullName>
+                <default>false</default>
+                <label>VYPR 2x</label>
+            </value>
+            <value>
+                <fullName>VYPR 2x2</fullName>
+                <default>false</default>
+                <label>VYPR 2x2</label>
+            </value>
+            <value>
+                <fullName>VYPR 2p</fullName>
+                <default>false</default>
+                <label>VYPR 2p</label>
+            </value>
+            <value>
+                <fullName>VYPR 3p</fullName>
+                <default>false</default>
+                <label>VYPR 3p</label>
+            </value>
+            <value>
+                <fullName>VYPR 3x</fullName>
+                <default>false</default>
+                <label>VYPR 3x</label>
+            </value>
+            <value>
+                <fullName>VYPR 3x2</fullName>
+                <default>false</default>
+                <label>VYPR 3x2</label>
+            </value>
+            <value>
+                <fullName>Solunar</fullName>
+                <default>false</default>
+                <label>Solunar</label>
+            </value>
+            <value>
+                <fullName>Whisper</fullName>
+                <default>false</default>
+                <label>Whisper</label>
+            </value>
+            <value>
+                <fullName>HRVYST</fullName>
+                <default>false</default>
+                <label>HRVYST</label>
+            </value>
+            <value>
+                <fullName>SHYFT</fullName>
+                <default>false</default>
+                <label>SHYFT</label>
+            </value>
+            <value>
+                <fullName>Multiple Products</fullName>
+                <default>false</default>
+                <label>Multiple Products</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>RAZR 3</fullName>
+                <default>false</default>
+                <label>RAZR 3</label>
+            </value>
+            <value>
+                <fullName>RAZR 4</fullName>
+                <default>false</default>
+                <label>RAZR 4</label>
+            </value>
+            <value>
+                <fullName>AC Cables</fullName>
+                <default>false</default>
+                <label>AC Cables</label>
+            </value>
+            <value>
+                <fullName>DC Cables</fullName>
+                <default>false</default>
+                <label>DC Cables</label>
+            </value>
+            <value>
+                <fullName>Mounting Hardware</fullName>
+                <default>false</default>
+                <label>Mounting Hardware</label>
+            </value>
+            <value>
+                <fullName>Dimming Cables</fullName>
+                <default>false</default>
+                <label>Dimming Cables</label>
+            </value>
+            <value>
+                <fullName>RAZRMS</fullName>
+                <default>false</default>
+                <label>RAZRMS</label>
+            </value>
+            <value>
+                <fullName>FANG</fullName>
+                <default>false</default>
+                <label>FANG</label>
+            </value>
+            <value>
+                <fullName>Razr X</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Razr X</label>
+            </value>
+            <value>
+                <fullName>Spydr X or X+</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Spydr X or X+</label>
+            </value>
+            <value>
+                <fullName>VyprX or X+ (classic)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>VyprX or X+ (classic)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SPYDR</controllingFieldValue>
+            <valueName>SPYDRx</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPYDR</controllingFieldValue>
+            <valueName>SPYDRx PLUS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPYDR</controllingFieldValue>
+            <valueName>SPYDR 2x</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPYDR</controllingFieldValue>
+            <valueName>SPYDR 2x33</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPYDR</controllingFieldValue>
+            <valueName>SPYDR 2P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPYDR</controllingFieldValue>
+            <valueName>SPYDR 2i</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPYDR</controllingFieldValue>
+            <valueName>SPYDR 2i33</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPYDR</controllingFieldValue>
+            <valueName>SPYDR 2i40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPYDR</controllingFieldValue>
+            <valueName>SPYDR 2H</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPYDR</controllingFieldValue>
+            <valueName>FANG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VYPR</controllingFieldValue>
+            <valueName>VYPRx</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VYPR</controllingFieldValue>
+            <valueName>VYPRx PLUS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VYPR</controllingFieldValue>
+            <valueName>VYPR 2x</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VYPR</controllingFieldValue>
+            <valueName>VYPR 2x2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VYPR</controllingFieldValue>
+            <valueName>VYPR 2p</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VYPR</controllingFieldValue>
+            <valueName>VYPR 3p</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VYPR</controllingFieldValue>
+            <valueName>VYPR 3x</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VYPR</controllingFieldValue>
+            <valueName>VYPR 3x2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Razr</controllingFieldValue>
+            <valueName>RAZR 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Razr</controllingFieldValue>
+            <valueName>RAZR M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Razr</controllingFieldValue>
+            <valueName>RAZRx</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Razr</controllingFieldValue>
+            <valueName>RAZR 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Razr</controllingFieldValue>
+            <valueName>RAZR 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Razr</controllingFieldValue>
+            <valueName>RAZRMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ray</controllingFieldValue>
+            <valueName>RAY22</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ray</controllingFieldValue>
+            <valueName>RAY44</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ray</controllingFieldValue>
+            <valueName>RAY66</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Controllers</controllingFieldValue>
+            <valueName>Solunar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Controllers</controllingFieldValue>
+            <valueName>Whisper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Controllers</controllingFieldValue>
+            <valueName>HRVYST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Controllers</controllingFieldValue>
+            <valueName>SHYFT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accessories</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accessories</controllingFieldValue>
+            <valueName>AC Cables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accessories</controllingFieldValue>
+            <valueName>DC Cables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accessories</controllingFieldValue>
+            <valueName>Mounting Hardware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accessories</controllingFieldValue>
+            <valueName>Dimming Cables</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

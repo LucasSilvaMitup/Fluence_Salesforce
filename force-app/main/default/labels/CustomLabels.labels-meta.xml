@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AccountResellerRTDevName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountResellerRTDevName</shortDescription>
+        <value>Reseller</value>
+    </labels>
+    <labels>
+        <fullName>Americas_Direct_Cannabis</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Americas Direct Cannabis</shortDescription>
+        <value>01s5e00000D8P4GAAV</value>
+    </labels>
+    <labels>
+        <fullName>Americas_Direct_Comm_Ag</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Americas Direct Comm Ag</shortDescription>
+        <value>01s5e00000D8P4HAAV</value>
+    </labels>
+    <labels>
+        <fullName>Americas_Systems_Integrator</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Americas Systems Integrator</shortDescription>
+        <value>01s5e00000D8P4IAAV</value>
+    </labels>
+    <labels>
+        <fullName>BizDevProfileName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Biz Dev Profile Name</shortDescription>
+        <value>Biz Dev</value>
+    </labels>
+    <labels>
+        <fullName>Case_Deletion_Email_Message_Recycle_Bin_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Deletion Email Message Recycle Bin Link</shortDescription>
+        <value>/lightning/o/DeleteEvent/list</value>
+    </labels>
+    <labels>
+        <fullName>ERR_MSG_EDITS_ON_CLOSED_OPPS</fullName>
+        <categories>Error Message, Opportunity</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERR_MSG_EDITS_ON_CLOSED_OPPS</shortDescription>
+        <value>Changes to Closed Opportunities is not allowed. Please reach out to System Administrator for additional help.</value>
+    </labels>
+    <labels>
+        <fullName>ERR_MSG_EDITS_ON_MULTIPLE_QUOTES</fullName>
+        <categories>Error Message, Quote</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERR_MSG_EDITS_ON_MULTIPLE_QUOTES</shortDescription>
+        <value>There is a quote that has already been promoted to order for this Opportunity, so another quote on this opportunity cannot be promoted to order.</value>
+    </labels>
+    <labels>
+        <fullName>FAE_APAC_Australia_Queue</fullName>
+        <categories>Queue</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FAE APAC Australia Queue</shortDescription>
+        <value>00G5e000000KCim</value>
+    </labels>
+    <labels>
+        <fullName>FAE_APAC_Queue</fullName>
+        <categories>Queue</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FAE APAC Queue</shortDescription>
+        <value>00G5e000000KCir</value>
+    </labels>
+    <labels>
+        <fullName>FAE_AR_Queue</fullName>
+        <categories>Queue</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FAE AR Queue</shortDescription>
+        <value>00G5e000000KCiw</value>
+    </labels>
+    <labels>
+        <fullName>FAE_Cannabis_Queue</fullName>
+        <categories>Queue</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FAE Cannabis Queue</shortDescription>
+        <value>00G5e000000KCj6EAG</value>
+    </labels>
+    <labels>
+        <fullName>FAE_Comm_Ag_Queue</fullName>
+        <categories>Queue</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FAE Comm Ag Queue</shortDescription>
+        <value>00G5e000000KCjB</value>
+    </labels>
+    <labels>
+        <fullName>FAE_EMEA_Queue</fullName>
+        <categories>Queue</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FAE EMEA Queue</shortDescription>
+        <value>00G5e000000KCjG</value>
+    </labels>
+    <labels>
+        <fullName>FAE_Queue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FAE Queue</shortDescription>
+        <value>00G5e000000KCjL</value>
+    </labels>
+    <labels>
+        <fullName>FluenceSystemEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fluence System Email</shortDescription>
+        <value>systems@fluence-led.com</value>
+    </labels>
+    <labels>
+        <fullName>General</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General</shortDescription>
+        <value>0125e000000Ey4j</value>
+    </labels>
+    <labels>
+        <fullName>LDRF</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LDRF Record Type</shortDescription>
+        <value>0125e000000Ey4kAAC</value>
+    </labels>
+    <labels>
+        <fullName>LDRFCaseStatusToChangeToHighPriorityOnSubmission</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LDRFCaseStatusToChangeToHighPriorityOnSubmission</shortDescription>
+        <value>Complete</value>
+    </labels>
+    <labels>
+        <fullName>LDRFCaseStatusToChangeToSubmitted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LDRFCaseStatusToChangeToSubmitted</shortDescription>
+        <value>New,Info Missing,FAE Review,Complete</value>
+    </labels>
+    <labels>
+        <fullName>LDRFCaseStatusToChangeToUrgentPriorityOnSubmission</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LDRFCaseStatusToChangeToUrgentPriorityOnSubmission</shortDescription>
+        <value>FAE Review</value>
+    </labels>
+    <labels>
+        <fullName>LDRFCaseStatusToPreventSubmission</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LDRFCaseStatusToPreventSubmission</shortDescription>
+        <value>Closed</value>
+    </labels>
+    <labels>
+        <fullName>LDRFDeepCloneError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LDRFDeepCloneError</shortDescription>
+        <value>There was a problem cloning LDRF. Please review and try again.</value>
+    </labels>
+    <labels>
+        <fullName>LDRFDeepCloneSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LDRFDeepCloneSuccess</shortDescription>
+        <value>The LDRF has been cloned successfully.</value>
+    </labels>
+    <labels>
+        <fullName>LDRFLayoutName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LDRF Layout Name</shortDescription>
+        <value>Case-LDRF Layout</value>
+    </labels>
+    <labels>
+        <fullName>LDRFLayoutSectionLightingDesignDetails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LDRF Layout Section Lighting Design Details</shortDescription>
+        <value>Lighting Design Details</value>
+    </labels>
+    <labels>
+        <fullName>NAWholesalerPriceBook2Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NAWholesalerPriceBook2Id</shortDescription>
+        <value>01s5e00000D8P4JAAV</value>
+    </labels>
+    <labels>
+        <fullName>NA_Wholesaler_Price_Book</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NA Wholesaler Price Book</shortDescription>
+        <value>01s5e00000D8P4JAAV</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Pricebook_on_creation_error_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Pricebook on creation error message</shortDescription>
+        <value>Price Book cannot be filled upon record creation.</value>
+    </labels>
+    <labels>
+        <fullName>PreventDeleteRecordMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PreventDeleteRecordMessage</shortDescription>
+        <value>You are not allowed to delete this record.</value>
+    </labels>
+    <labels>
+        <fullName>PricebooksICOS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PricebooksICOS</shortDescription>
+        <value>01s5e00000D8P4EAAV,01s5e00000D8P4GAAV,01s5e00000D8P4HAAV,01s5e00000D8P4HAAV,01s5e00000D8P4IAAV,01s5e00000D8P4KAAV,01s5e00000D8P4LAAV</value>
+    </labels>
+    <labels>
+        <fullName>RARF</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RARF Record Type</shortDescription>
+        <value>0125e000000Ey4l</value>
+    </labels>
+    <labels>
+        <fullName>RARF_Queue</fullName>
+        <categories>Queue</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RARF Queue</shortDescription>
+        <value>00G5e000000KCjz</value>
+    </labels>
+    <labels>
+        <fullName>RMA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RMA</shortDescription>
+        <value>0125e000000Ey4m</value>
+    </labels>
+    <labels>
+        <fullName>SAPProduct</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SAPProduct</shortDescription>
+        <value>SAP Product</value>
+    </labels>
+    <labels>
+        <fullName>SPAFormDeniedSubject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPAFormDeniedSubject</shortDescription>
+        <value>SPA Form Denied</value>
+    </labels>
+    <labels>
+        <fullName>Sources_To_Block</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sources To Block</shortDescription>
+        <value>Email;Email To Case;Web;Phone</value>
+    </labels>
+    <labels>
+        <fullName>StateCodes_Who_Tax_Shipping</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StateCodes Who Tax Shipping</shortDescription>
+        <value>TX</value>
+    </labels>
+    <labels>
+        <fullName>Submit_LDRF_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Submit LDRF Error</shortDescription>
+        <value>There was a problem submitting LDRF.  Please clone the LDRF and press the submit button with your requested changes.</value>
+    </labels>
+    <labels>
+        <fullName>Submit_LDRF_Success</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Submit LDRF Success</shortDescription>
+        <value>The LDRF has been submitted successfully.</value>
+    </labels>
+    <labels>
+        <fullName>Surcharge_Product_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Surcharge Product Name</shortDescription>
+        <value>Surcharge</value>
+    </labels>
+    <labels>
+        <fullName>US_Preferred_Authorized_Reseller</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>US Preferred Authorized Reseller</shortDescription>
+        <value>01s5e00000D8P4LAAV</value>
+    </labels>
+</CustomLabels>

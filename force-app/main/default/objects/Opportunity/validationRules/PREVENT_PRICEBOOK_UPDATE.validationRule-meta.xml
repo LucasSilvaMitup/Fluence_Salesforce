@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PREVENT_PRICEBOOK_UPDATE</fullName>
+    <active>true</active>
+    <description>This rule prevents PriceBook update on Opportunity.</description>
+    <errorConditionFormula>AND 
+(
+				$Setup.Bypass_Configuration__c.Opportunity_Validation_Rule__c = FALSE,
+NOT(ISNEW()),NOT($User.Allow_Pricebook_update_on_Opportunity__c ),ISCHANGED( Pricebook2Id )
+)</errorConditionFormula>
+    <errorDisplayField>Pricebook2Id</errorDisplayField>
+    <errorMessage>Price Book cannot be updated.</errorMessage>
+</ValidationRule>

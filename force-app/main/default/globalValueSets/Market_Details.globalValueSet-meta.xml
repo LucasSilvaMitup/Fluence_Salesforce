@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cannabis</fullName>
+        <default>false</default>
+        <label>Cannabis</label>
+    </customValue>
+    <customValue>
+        <fullName>Hemp</fullName>
+        <default>false</default>
+        <label>Hemp</label>
+    </customValue>
+    <customValue>
+        <fullName>Compounds</fullName>
+        <default>false</default>
+        <label>Compounds</label>
+    </customValue>
+    <customValue>
+        <fullName>Tomato</fullName>
+        <default>false</default>
+        <label>Tomato</label>
+    </customValue>
+    <customValue>
+        <fullName>Cucumber</fullName>
+        <default>false</default>
+        <label>Cucumber</label>
+    </customValue>
+    <customValue>
+        <fullName>Pepper</fullName>
+        <default>false</default>
+        <label>Pepper</label>
+    </customValue>
+    <customValue>
+        <fullName>Other High Wire</fullName>
+        <default>false</default>
+        <label>Other High Wire</label>
+    </customValue>
+    <customValue>
+        <fullName>Strawberry</fullName>
+        <default>false</default>
+        <label>Strawberry</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Soft Fruit</fullName>
+        <default>false</default>
+        <label>Other Soft Fruit</label>
+    </customValue>
+    <customValue>
+        <fullName>Lettuce</fullName>
+        <default>false</default>
+        <label>Lettuce</label>
+    </customValue>
+    <customValue>
+        <fullName>Herbs</fullName>
+        <default>false</default>
+        <label>Herbs</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Leafy Vegetables</fullName>
+        <default>false</default>
+        <label>Other Leafy Vegetables</label>
+    </customValue>
+    <customValue>
+        <fullName>Phalaenopsis</fullName>
+        <default>false</default>
+        <label>Phalaenopsis</label>
+    </customValue>
+    <customValue>
+        <fullName>Cut Roses</fullName>
+        <default>false</default>
+        <label>Cut Roses</label>
+    </customValue>
+    <customValue>
+        <fullName>Cut Chrysanthemum</fullName>
+        <default>false</default>
+        <label>Cut Chrysanthemum</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Cut Flowers</fullName>
+        <default>false</default>
+        <label>Other Cut Flowers</label>
+    </customValue>
+    <customValue>
+        <fullName>Annuals &amp; Perennials</fullName>
+        <default>false</default>
+        <label>Annuals &amp; Perennials</label>
+    </customValue>
+    <customValue>
+        <fullName>Flowering</fullName>
+        <default>false</default>
+        <label>Flowering</label>
+    </customValue>
+    <customValue>
+        <fullName>Flowering Potted Plants</fullName>
+        <default>false</default>
+        <label>Flowering Potted Plants</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Potted Plants</fullName>
+        <default>false</default>
+        <label>Other Potted Plants</label>
+    </customValue>
+    <customValue>
+        <fullName>Tissue Culture</fullName>
+        <default>false</default>
+        <label>Tissue Culture</label>
+    </customValue>
+    <customValue>
+        <fullName>Genetics</fullName>
+        <default>false</default>
+        <label>Genetics</label>
+    </customValue>
+    <customValue>
+        <fullName>Breeding</fullName>
+        <default>false</default>
+        <label>Breeding</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Research</fullName>
+        <default>false</default>
+        <label>Other Research</label>
+    </customValue>
+    <masterLabel>Market Details</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>North_America_Commercial_Agriculture_Q_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>North America – Commercial Agriculture Q</label>
+    <queue>North_America_Commercial_Agriculture_Q</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

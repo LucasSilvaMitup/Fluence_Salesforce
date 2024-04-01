@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Proactive PSU Replacement</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Proactive PSU Replacement</name>
+    <style>none</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>Hello {!Case.Contact},
+
+Thanks for your time on the phone today. Per our conversation, as part of Fluence&apos;s proactive replacement program I will be arranging for a new power supply to be shipped out to you within the next 2 business days. We will send you an email notification once it has left our warehouse.
+
+Please also find attached a prepaid return label you can use to send back your current power supply. Feel free to wait until the replacement arrives so you can make use of its packaging.
+
+Thanks again for supporting Fluence. Let me know if you have any other questions or concerns!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

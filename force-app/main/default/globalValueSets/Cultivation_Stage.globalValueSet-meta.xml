@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Tissue Culture</fullName>
+        <default>false</default>
+        <label>Tissue Culture</label>
+    </customValue>
+    <customValue>
+        <fullName>Propagation</fullName>
+        <default>false</default>
+        <label>Propagation</label>
+    </customValue>
+    <customValue>
+        <fullName>Vegetation</fullName>
+        <default>false</default>
+        <label>Vegetation</label>
+    </customValue>
+    <customValue>
+        <fullName>Flowering</fullName>
+        <default>false</default>
+        <label>Flowering</label>
+    </customValue>
+    <masterLabel>Cultivation Stage</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

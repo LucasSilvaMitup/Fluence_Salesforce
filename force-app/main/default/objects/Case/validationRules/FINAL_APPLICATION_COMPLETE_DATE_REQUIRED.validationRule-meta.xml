@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FINAL_APPLICATION_COMPLETE_DATE_REQUIRED</fullName>
+    <active>true</active>
+    <description>FINAL_APPLICATION_COMPLETE_DATE_REQUIRED</description>
+    <errorConditionFormula>AND(
+ Final_application_complete__c ,
+ ISBLANK( Final_application_complete_date__c ),
+$Setup.Bypass_Configuration__c.Case_Validation_Rule__c	= FALSE 
+)</errorConditionFormula>
+    <errorDisplayField>Final_application_complete_date__c</errorDisplayField>
+    <errorMessage>Final application complete date is Required.</errorMessage>
+</ValidationRule>

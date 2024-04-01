@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wireless_Flex_Dim_without_Commissioning</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(INCLUDES(Electrical_Specifications_Section__c, &apos;Wireless Flex Dim&apos;),
+!INCLUDES(Electrical_Specifications_Section__c, &apos;AC Flex&apos;),
+!INCLUDES(Electrical_Specifications_Section__c, &apos;DC Flex&apos;), ISBLANK(TEXT(Fluence_Commissioning_Services_Needed__c))),
+
+AND(INCLUDES(Electrical_Specifications_Section__c, &apos;Wireless Flex Dim&apos;),
+INCLUDES(Electrical_Specifications_Section__c, &apos;AC Flex&apos;),
+!INCLUDES(Electrical_Specifications_Section__c, &apos;DC Flex&apos;), ISBLANK(TEXT(Fluence_Commissioning_Services_Needed__c)))
+
+)</errorConditionFormula>
+    <errorDisplayField>Fluence_Commissioning_Services_Needed__c</errorDisplayField>
+    <errorMessage>You selected Wireless Flex Dim in the Electrical Specifications Section.  Please identify if Fluence Commissioning Services are needed with a Yes or No selection.</errorMessage>
+</ValidationRule>

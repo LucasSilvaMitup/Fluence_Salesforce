@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <description>This action will add User&apos;s Email to list.</description>
+        <name>AddUsersEmailToList</name>
+        <label>Add User&apos;s Email to List</label>
+        <locationX>264</locationX>
+        <locationY>866</locationY>
+        <assignmentItems>
+            <assignToReference>recipientEmails</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>IterateFromUsers.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateFromUsers</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>This action will add User&apos;s Id in userIds list.</description>
+        <name>AddUsersIdToList</name>
+        <label>Add User&apos;s Id to List</label>
+        <locationX>264</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>userIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>IterateFromGroupMembers.UserOrGroupId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateFromGroupMembers</targetReference>
+        </connector>
+    </assignments>
+    <description>This flow is used to get emails from Users located in Public Groups (Group Members). Accept pubGroupDevName as input and return as output recipientEmails list.</description>
+    <environments>Default</environments>
+    <interviewLabel>Email Handler - Get Emails from Group Members {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Email Handler - Get Emails from Group Members</label>
+    <loops>
+        <description>This action will iterate each Group Member record to add in userIds list.</description>
+        <name>IterateFromGroupMembers</name>
+        <label>Iterate from Group Members</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <collectionReference>GetGroupMembers</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>AddUsersIdToList</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>GetUsersEmails</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>This action will iterate from User records to store Email in recipientEmails list.</description>
+        <name>IterateFromUsers</name>
+        <label>Iterate from Users</label>
+        <locationX>176</locationX>
+        <locationY>758</locationY>
+        <collectionReference>GetUsersEmails</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>AddUsersEmailToList</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>This action will get all Group Member records related to Public Group stored in previous step.</description>
+        <name>GetGroupMembers</name>
+        <label>Get Group Members</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IterateFromGroupMembers</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>GroupId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetPublicGroup.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>GroupMember</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>This action will get Public Group record by pubGroupDevName.</description>
+        <name>GetPublicGroup</name>
+        <label>Get Public Group</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>GetGroupMembers</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>pubGroupDevName</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>This action will get all Users Emails based on userIds list.</description>
+        <name>GetUsersEmails</name>
+        <label>Get User&apos;s Emails</label>
+        <locationX>176</locationX>
+        <locationY>650</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IterateFromUsers</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>userIds</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>User</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Email</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetPublicGroup</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores Public Group&apos;s Developer Name</description>
+        <name>pubGroupDevName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Store User&apos;s Emails.</description>
+        <name>recipientEmails</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores collection of User&apos;s Id.</description>
+        <name>userIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

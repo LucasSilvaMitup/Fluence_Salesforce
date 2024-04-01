@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadSourceDetail__c</fullName>
+    <externalId>false</externalId>
+    <label>Lead Source Detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LeadSource</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Damian Solomon</fullName>
+                <default>false</default>
+                <label>Damian Solomon</label>
+            </value>
+            <value>
+                <fullName>PIPP Horticulture</fullName>
+                <default>false</default>
+                <label>PIPP Horticulture</label>
+            </value>
+            <value>
+                <fullName>Bickel Co</fullName>
+                <default>false</default>
+                <label>Bickel Co</label>
+            </value>
+            <value>
+                <fullName>Kulture</fullName>
+                <default>false</default>
+                <label>Kulture</label>
+            </value>
+            <value>
+                <fullName>Michael Sagan</fullName>
+                <default>false</default>
+                <label>Michael Sagan</label>
+            </value>
+            <value>
+                <fullName>Zartarian Engineering</fullName>
+                <default>false</default>
+                <label>Zartarian Engineering</label>
+            </value>
+            <value>
+                <fullName>Athena</fullName>
+                <default>false</default>
+                <label>Athena</label>
+            </value>
+            <value>
+                <fullName>Grow Glide</fullName>
+                <default>false</default>
+                <label>Grow Glide</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Ecosystem/Influencer Agent</controllingFieldValue>
+            <valueName>Damian Solomon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecosystem/Influencer Agent</controllingFieldValue>
+            <valueName>PIPP Horticulture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecosystem/Influencer Agent</controllingFieldValue>
+            <valueName>Bickel Co</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecosystem/Influencer Agent</controllingFieldValue>
+            <valueName>Kulture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecosystem/Influencer Agent</controllingFieldValue>
+            <valueName>Michael Sagan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecosystem/Influencer Agent</controllingFieldValue>
+            <valueName>Zartarian Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecosystem/Influencer Agent</controllingFieldValue>
+            <valueName>Athena</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecosystem/Influencer Agent</controllingFieldValue>
+            <valueName>Grow Glide</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

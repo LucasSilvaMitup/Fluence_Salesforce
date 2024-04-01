@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Can I get a fixture for my YouTube/Grow Journal?</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Can I get a fixture for my YouTube/Grow Journal?</name>
+    <style>none</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>Thank you for contacting us and for your interest in Fluence LEDs. It is certainly an exciting time for horticulture! We are always curious how cultivators are innovating, so feel free link me to your journal, blog, Instagram, or YouTube channel and I would be glad to check it out. While we are not currently offering sponsorships or extending test fixtures, I am happy to know that you are thinking about how to best maximize your yield per square foot while reaping all the benefits of an ultra-efficient lighting system.
+
+While I am certain you have already done plenty of research on the world&apos;s best LED solutions (You found us after all!), I would invite you to have a look at our current product line and let me know if you have any questions on what fixture or spectrum might be best for you.
+
+Thanks and all the best!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

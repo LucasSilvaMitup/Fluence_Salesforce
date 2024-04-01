@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>This action will send an Email Alert to Case Owner.</description>
+        <name>SendEmailCaseOwner</name>
+        <label>Send Email to Case Owner</label>
+        <locationX>50</locationX>
+        <locationY>1313</locationY>
+        <actionName>Case.RARF_Case_Reopen_Notification</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>GetRARFCase.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.RARF_Case_Reopen_Notification</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <description>This action will assign the previous Status Value before Closed to reopen the RARF Case.</description>
+        <name>AssignPreviousStatus</name>
+        <label>Assign Previous Status</label>
+        <locationX>138</locationX>
+        <locationY>863</locationY>
+        <assignmentItems>
+            <assignToReference>status</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>IterateCaseHistory.OldValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>UpdateRARFCase</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>This action checks if RARF Case was retrieved.</description>
+        <name>CheckRARFCase</name>
+        <label>Check RARF Case</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>RARFRetrieved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetRARFCase</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetRARFCaseHistory</targetReference>
+            </connector>
+            <label>RARF Retrieved ?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This action checks if Status field in Case History was changed to Closed.</description>
+        <name>CheckStatusField</name>
+        <label>Check Status Field</label>
+        <locationX>270</locationX>
+        <locationY>755</locationY>
+        <defaultConnector>
+            <targetReference>IterateCaseHistory</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IsClosed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IterateCaseHistory.NewValue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AssignPreviousStatus</targetReference>
+            </connector>
+            <label>Is Closed?</label>
+        </rules>
+    </decisions>
+    <description>Flow used to reopen cases when opportunity is reopened and send notification to users.</description>
+    <environments>Default</environments>
+    <interviewLabel>Opportunity - Reopen Cases and Send Notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity - Reopen Cases and Send Notification</label>
+    <loops>
+        <description>This action will iterate from each Case History Record related to RARF Case.</description>
+        <name>IterateCaseHistory</name>
+        <label>Iterate Case History</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <collectionReference>GetRARFCaseHistory</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>CheckStatusField</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>UpdateRARFCase</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>This action will get RARF Case related to triggered Opportunity.</description>
+        <name>GetRARFCase</name>
+        <label>Get RARF Case</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CheckRARFCase</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Label.RARF</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Opportunity__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>This action will get Case History related to RARF Case retrieved.</description>
+        <name>GetRARFCaseHistory</name>
+        <label>Get RARF Case History</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IterateCaseHistory</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CaseId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRARFCase.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Field</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Status</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>CaseHistory</object>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>This action updates the Status of RARF Case related to triggered Opportunity.</description>
+        <name>UpdateRARFCase</name>
+        <label>Update RARF Case</label>
+        <locationX>50</locationX>
+        <locationY>1205</locationY>
+        <connector>
+            <targetReference>SendEmailCaseOwner</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRARFCase.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <elementReference>status</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetRARFCase</targetReference>
+        </connector>
+        <filterFormula>ISPICKVAL({!$Record__Prior.StageName}, &apos;Closed Lost&apos;) &amp;&amp; ISCHANGED({!$Record.StageName})</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the previous Status value.</description>
+        <name>status</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

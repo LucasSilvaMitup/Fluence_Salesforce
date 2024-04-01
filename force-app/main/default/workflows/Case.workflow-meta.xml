@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Case_Closed_Notification</fullName>
+        <description>Case Closed Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SUPPORT_Case_Closed_notification_SAMPLE</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Deleted_Notification</fullName>
+        <description>Case Deleted Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>General_Case_Delete_Notification_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_case_has_been_deleted</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Reopen_Notification</fullName>
+        <description>Case Reopen Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_Reopened</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_rejected_notification</fullName>
+        <description>Case rejected notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SUPPORT_Case_Rejected_notification_SAMPLE</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_status_changed_notification</fullName>
+        <description>Case status changed notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FAE</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Case_status_changed_notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Notification_when_PreApproval_Obtained_on_Case</fullName>
+        <description>Email Notification when PreApproval Obtained on Case</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FAE</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/PreApproval_Obtained_on_RARF_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Notification_when_PreApproval_Submitted_but_not_obtained_till_14_days_on_C</fullName>
+        <description>Email Notification when PreApproval Submitted but not obtained till 14 days on Case</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Utility_Rebate_Preapproval_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Notification_when_PreApproval_Submitted_on_Case</fullName>
+        <description>Email Notification when PreApproval Submitted on Case</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FAE</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/PreApproval_Submitted_on_RARF_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Creation_Notification_to_Customer_Web_to_Case_Email_to_Case</fullName>
+        <description>General Case Creation Notification to Customer (Web to Case, Email to Case)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_Creation_Notification_to_Customer_Web_to_Case_Email_to_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_RMA_Closed_but_awaiting_replacement_order_shipment</fullName>
+        <description>General Case RMA Closed but awaiting replacement order shipment</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Last_Case_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_RMA_CLOSED_BUT_AWAITING_REPLACEMENT_ORDER_SHIPMENT</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_RMA_Received</fullName>
+        <description>General Case RMA Received</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Last_Case_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_RMA_Received</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Resolution_RMA</fullName>
+        <description>General Case Resolution = RMA</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Last_Case_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_RMA_Required</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Resolution_Resolved</fullName>
+        <description>General Case Resolution = Resolved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Last_Case_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_Resolved</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Return_Material_not_received_in_30_Days</fullName>
+        <description>General Case Return Material not received in 30 Days</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Last_Case_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_Return_Material_not_received_in_30_days</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Site_Visit_Needed</fullName>
+        <description>General Case Site Visit Needed</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Last_Case_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_Site_visit_needed</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Tech_Support_Needed_by_FAE_APAC_Australia_Queue</fullName>
+        <description>General Case Tech Support Needed by FAE APAC Australia Queue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FAE_APAC_Australia_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_assignment_to_FAE_Queue_when_technical_support_needed</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Tech_Support_Needed_by_FAE_APAC_Queue</fullName>
+        <description>General Case Tech Support Needed by FAE APAC Queue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FAE_APAC_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_assignment_to_FAE_Queue_when_technical_support_needed</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Tech_Support_Needed_by_FAE_AR_Queue</fullName>
+        <description>General Case Tech Support Needed by FAE AR Queue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FAE_AR_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_assignment_to_FAE_Queue_when_technical_support_needed</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Tech_Support_Needed_by_FAE_Cannabis_Queue</fullName>
+        <description>General Case Tech Support Needed by FAE Cannabis Queue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FAE_Cannabis_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_assignment_to_FAE_Queue_when_technical_support_needed</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Tech_Support_Needed_by_FAE_Comm_Ag_Queue</fullName>
+        <description>General Case Tech Support Needed by FAE Comm Ag Queue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FAE_Comm_Ag_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_assignment_to_FAE_Queue_when_technical_support_needed</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Tech_Support_Needed_by_FAE_EMEA_Queue</fullName>
+        <description>General Case Tech Support Needed by FAE EMEA Queue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FAE_EMEA_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_assignment_to_FAE_Queue_when_technical_support_needed</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Tech_Support_Needed_by_FAE_Queue</fullName>
+        <description>General Case Tech Support Needed by FAE Queue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FAE_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_assignment_to_FAE_Queue_when_technical_support_needed</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Waiting_for_Customer</fullName>
+        <description>General Case Waiting for Customer</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_Notification_on_Case_Waiting_on_Customer</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Waiting_for_Customer_FINAL_MESSAGE</fullName>
+        <description>General Case Waiting for Customer FINAL MESSAGE</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_Notification_on_Case_Waiting_on_Customer_FINAL_MESSAGE</template>
+    </alerts>
+    <alerts>
+        <fullName>General_Case_Waiting_on_Customer_Final_Message</fullName>
+        <description>General Case Waiting on Customer - Final Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/General_Case_waiting_on_customer</template>
+    </alerts>
+    <alerts>
+        <fullName>HS_Case_Creation</fullName>
+        <description>HS Case Creation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>HS_Contact__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/HS_Case_creation</template>
+    </alerts>
+    <alerts>
+        <fullName>LDRF_Case_Status_Complete_Alert</fullName>
+        <description>LDRF Case Status Complete Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Last_Case_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/LDRF_Complete_alert_to_Last_Case_Owner</template>
+    </alerts>
+    <alerts>
+        <fullName>LDRF_Case_Status_Complete_Notification_to_Account_Team</fullName>
+        <description>LDRF Case Status Complete Notification to Account Team</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FAE</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/LDRF_Case_Status_Complete_Notification_to_Account_Team</template>
+    </alerts>
+    <alerts>
+        <fullName>LDRF_case_assignment_notification_to_Opportunity_Owner</fullName>
+        <description>LDRF case assignment notification to Opportunity Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+    </alerts>
+    <alerts>
+        <fullName>LDRF_form_status_moved_to_Approved</fullName>
+        <description>LDRF form status moved to ‘Approved’</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/LDRF_form_status_moved_to_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>LDRF_form_status_moved_to_Review_Requested</fullName>
+        <description>LDRF form status moved to ‘Review Requested’</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/LDRF_form_status_moved_to_Review_Requested</template>
+    </alerts>
+    <alerts>
+        <fullName>LDRF_form_submitted_for_Americas</fullName>
+        <description>LDRF form submitted for Americas</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>LDRF_Americas_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/LDRF_Form_submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>LDRF_form_submitted_for_EMEA</fullName>
+        <description>LDRF form submitted for EMEA</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>LDRF_EMEA_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/LDRF_Form_submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>LDRF_has_Information_Missing</fullName>
+        <description>LDRF has Information Missing</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Opportunity_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/LDRF_has_information_missing</template>
+    </alerts>
+    <alerts>
+        <fullName>LDRF_has_been_revised</fullName>
+        <description>LDRF has been revised</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>HTML/LDRF_has_been_revised</template>
+    </alerts>
+    <alerts>
+        <fullName>LDRF_status_changed_to_Change_Requested</fullName>
+        <description>LDRF status changed to &quot;Change Requested&quot;</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FAE</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/LDRF_form_status_moved_to_Change_Requested</template>
+    </alerts>
+    <alerts>
+        <fullName>LDRF_status_changed_to_Rejected</fullName>
+        <description>LDRF status changed to &quot;Rejected&quot;</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/LDRF_form_status_moved_to_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>LDRF_status_changes_to_In_Progress</fullName>
+        <description>LDRF status changes to &apos;In Progress&apos;</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FAE</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/LDRF_status_changes_to_In_Progress</template>
+    </alerts>
+    <alerts>
+        <fullName>LDRF_status_moved_to_Closed</fullName>
+        <description>LDRF status moved to &quot;Closed&quot;</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/LDRF_form_status_moved_to_Closed</template>
+    </alerts>
+    <alerts>
+        <fullName>New_LDRF_case_assignment_notification</fullName>
+        <description>New LDRF case assignment notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>christopher.bezuyen@fluencebioengineering.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/LDRF_New_assignment_notification_SAMPLE</template>
+    </alerts>
+    <alerts>
+        <fullName>New_RARF_case_assignment_notification</fullName>
+        <description>New RARF case assignment notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>RARF_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+    </alerts>
+    <alerts>
+        <fullName>New_case_assignment_notification</fullName>
+        <description>New case assignment notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_on_Estimated_Installation_Date</fullName>
+        <description>Notification on Estimated Installation Date</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Installation_Date_Reached</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_when_Opportunity_on_Awaiting_PO_status_set_to_true</fullName>
+        <description>Notification when Opportunity on Awaiting PO status set to true</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/PO_sent_for_RARF_Opportunity</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_when_RARF_Case_is_Closed</fullName>
+        <description>Notification when RARF Case is Closed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_has_been_Lost_or_Inactive</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Contact_on_Case_resolved</fullName>
+        <description>Notify Contact on Case resolved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_Notification_on_Case_Resolved</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Opportunity_Owner_on_complete_lightning_design</fullName>
+        <description>Notify Opportunity Owner on complete lightning design</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Opportunity_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>HTML/Lightning_Design_Complete</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_RARF_Team</fullName>
+        <description>Notify RARF Team</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>RARF_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/RARF_case_assignment_notification</template>
+    </alerts>
+    <alerts>
+        <fullName>RARF_Case_Reopen_Notification</fullName>
+        <description>RARF Case Reopen Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/RARF_case_has_been_re_opened</template>
+    </alerts>
+    <alerts>
+        <fullName>RARF_Case_Status_Complete_Alert</fullName>
+        <description>RARF Case Status Complete Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FAE</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/RARF_submission_successfully_complete</template>
+    </alerts>
+    <alerts>
+        <fullName>RARF_Case_status_changed_to_Approved_notification</fullName>
+        <description>RARF Case status changed to &quot;Approved&quot; notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FAE</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/RARF_form_status_moved_to_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>RARF_Case_status_changed_to_Change_Requested_notification</fullName>
+        <description>RARF Case status changed to &quot;Change Requested&quot; notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FAE</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/RARF_status_moved_to_Change_Requested</template>
+    </alerts>
+    <alerts>
+        <fullName>RARF_Case_status_changed_to_In_Progress_notification</fullName>
+        <description>RARF Case status changed to &quot;In Progress&quot; notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FAE</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/RARF_form_status_moved_to_In_Progress</template>
+    </alerts>
+    <alerts>
+        <fullName>RARF_Case_status_changed_to_Review_Requested_notification</fullName>
+        <description>RARF Case status changed to &quot;Review Requested&quot; notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/RARF_form_status_moved_to_Review_Requested</template>
+    </alerts>
+    <alerts>
+        <fullName>RARF_and_LDRF_case_assignment_notification_to_Case_Owner</fullName>
+        <description>RARF and LDRF case assignment notification to Case Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Case_status_changed_notification</template>
+    </alerts>
+    <alerts>
+        <fullName>SPM_notification_on_Case</fullName>
+        <description>SPM notification on Case</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SPM_notification_on_Case</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Auto_Close_Case</fullName>
+        <field>Status</field>
+        <literalValue>Closed</literalValue>
+        <name>Auto Close Case</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ChangePriorityToHigh</fullName>
+        <field>Priority</field>
+        <literalValue>High</literalValue>
+        <name>Changes the case priority to high.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_status_to_Closed_to_Customer</fullName>
+        <field>Status</field>
+        <literalValue>Closed to Customer</literalValue>
+        <name>Change status to &quot;Closed to Customer&quot;</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Flag_Was_Set_as_Info_Missing</fullName>
+        <field>Was_flagged_as_Info_Missing__c</field>
+        <literalValue>1</literalValue>
+        <name>Flag Was Set as Info Missing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Description</fullName>
+        <field>Description_Rich__c</field>
+        <formula>Description</formula>
+        <name>Update Case Description</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_for_LDRF</fullName>
+        <field>Status</field>
+        <literalValue>In Progress</literalValue>
+        <name>Update Status for LDRF</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Submit_Flag_for_LDRF</fullName>
+        <field>Submit_case__c</field>
+        <literalValue>0</literalValue>
+        <name>Update Submit Flag for LDRF</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <tasks>
+        <fullName>LDRF_Status_changed_to_Change_Requested</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>LDRF - Status changed to “Change Requested&quot;</subject>
+    </tasks>
+    <tasks>
+        <fullName>New_Case_on_Account</fullName>
+        <assignedTo>S3</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <description>The following case was opened on your Account.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>New Case on Account</subject>
+    </tasks>
+    <tasks>
+        <fullName>RARF_Status_changed_to_Change_Requested</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>RARF - Status changed to “Change Requested&quot;</subject>
+    </tasks>
+    <tasks>
+        <fullName>RMA_Track_the_return_of_faulty_or_warranty_products</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>25</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>RMA - Track the return of faulty or warranty products</subject>
+    </tasks>
+</Workflow>

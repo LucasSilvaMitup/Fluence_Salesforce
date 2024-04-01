@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_need_help_with__c</fullName>
+    <externalId>false</externalId>
+    <label>I need help with</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ordering/Payments</fullName>
+                <default>false</default>
+                <label>Ordering/Payments</label>
+            </value>
+            <value>
+                <fullName>Order/Shipping status</fullName>
+                <default>false</default>
+                <label>Order/Shipping status</label>
+            </value>
+            <value>
+                <fullName>Product consultation</fullName>
+                <default>false</default>
+                <label>Product consultation</label>
+            </value>
+            <value>
+                <fullName>Installation support</fullName>
+                <default>false</default>
+                <label>Installation support</label>
+            </value>
+            <value>
+                <fullName>Cultivation support</fullName>
+                <default>false</default>
+                <label>Cultivation support</label>
+            </value>
+            <value>
+                <fullName>Warranty service</fullName>
+                <default>false</default>
+                <label>Warranty service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

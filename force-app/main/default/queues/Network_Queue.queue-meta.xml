@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Network Queue</name>
+    <queueMembers>
+        <users>
+            <user>kris.keuser@fluencebioengineering.com</user>
+            <user>rebecca.cole@fluencebioengineering.com</user>
+            <user>sara.bovorn@fluencebioengineering.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

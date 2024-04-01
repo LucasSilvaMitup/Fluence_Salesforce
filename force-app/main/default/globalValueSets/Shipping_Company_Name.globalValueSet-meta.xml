@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CH Robinson</fullName>
+        <default>false</default>
+        <label>CH Robinson</label>
+    </customValue>
+    <customValue>
+        <fullName>DHL</fullName>
+        <default>false</default>
+        <label>DHL</label>
+    </customValue>
+    <customValue>
+        <fullName>FedEx Freight</fullName>
+        <default>false</default>
+        <label>FedEx Freight</label>
+    </customValue>
+    <customValue>
+        <fullName>FedEx</fullName>
+        <default>false</default>
+        <label>FedEx</label>
+    </customValue>
+    <customValue>
+        <fullName>Forward Air, Inc</fullName>
+        <default>false</default>
+        <label>Forward Air, Inc</label>
+    </customValue>
+    <customValue>
+        <fullName>JSI DOMESTIC FREIGHT</fullName>
+        <default>false</default>
+        <label>JSI DOMESTIC FREIGHT</label>
+    </customValue>
+    <customValue>
+        <fullName>R &amp; L Carriers</fullName>
+        <default>false</default>
+        <label>R &amp; L Carriers</label>
+    </customValue>
+    <customValue>
+        <fullName>Saia Motor Freight</fullName>
+        <default>false</default>
+        <label>Saia Motor Freight</label>
+    </customValue>
+    <customValue>
+        <fullName>Southeastern Freight Lines</fullName>
+        <default>false</default>
+        <label>Southeastern Freight Lines</label>
+    </customValue>
+    <customValue>
+        <fullName>United Parcel Service</fullName>
+        <default>false</default>
+        <label>United Parcel Service</label>
+    </customValue>
+    <customValue>
+        <fullName>CUSTOMER PICKUP</fullName>
+        <default>false</default>
+        <label>CUSTOMER PICKUP</label>
+    </customValue>
+    <customValue>
+        <fullName>XPO Logistics</fullName>
+        <default>false</default>
+        <label>XPO Logistics</label>
+    </customValue>
+    <masterLabel>Shipping Company Name</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

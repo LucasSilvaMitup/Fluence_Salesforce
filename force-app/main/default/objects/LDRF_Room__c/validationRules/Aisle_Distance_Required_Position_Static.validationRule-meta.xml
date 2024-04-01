@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aisle_Distance_Required_Position_Static</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Setup.Bypass_Configuration__c.LDRF_ROOM_Validation_Rule__c = FALSE,
+ ISPICKVAL( Position__c , &apos;Static&apos;),
+OR( ISNULL( Aisle_Distance__c ) ,ISBLANK( Aisle_Distance__c )) )</errorConditionFormula>
+    <errorDisplayField>Aisle_Distance__c</errorDisplayField>
+    <errorMessage>Aisle Distance should not be blank when Position is Static.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Academia</fullName>
+        <default>false</default>
+        <label>Academia</label>
+    </customValue>
+    <customValue>
+        <fullName>Cannabis</fullName>
+        <default>false</default>
+        <label>Cannabis</label>
+    </customValue>
+    <customValue>
+        <fullName>Ornamental</fullName>
+        <default>false</default>
+        <label>Ornamental</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Produce</fullName>
+        <default>false</default>
+        <label>Produce</label>
+    </customValue>
+    <customValue>
+        <fullName>Research</fullName>
+        <default>false</default>
+        <label>Research</label>
+    </customValue>
+    <customValue>
+        <fullName>OSGE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OSGE</label>
+    </customValue>
+    <customValue>
+        <fullName>OSCH</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OSCH</label>
+    </customValue>
+    <customValue>
+        <fullName>Hemp</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Hemp</label>
+    </customValue>
+    <customValue>
+        <fullName>OSI</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OSI</label>
+    </customValue>
+    <customValue>
+        <fullName>Ecommerce</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ecommerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Authorized Reseller</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Authorized Reseller</label>
+    </customValue>
+    <customValue>
+        <fullName>Comm Ag - Ornamental</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Comm Ag - Ornamental</label>
+    </customValue>
+    <customValue>
+        <fullName>Comm Ag - Produce</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Comm Ag - Produce</label>
+    </customValue>
+    <customValue>
+        <fullName>OSME</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OSME</label>
+    </customValue>
+    <masterLabel>Market</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

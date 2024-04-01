@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Details__c</fullName>
+    <externalId>false</externalId>
+    <label>Market Details</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Market__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Market_Details</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Cannabis</controllingFieldValue>
+            <valueName>Cannabis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cannabis</controllingFieldValue>
+            <valueName>Hemp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cannabis</controllingFieldValue>
+            <valueName>Compounds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produce</controllingFieldValue>
+            <valueName>Tomato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produce</controllingFieldValue>
+            <valueName>Cucumber</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produce</controllingFieldValue>
+            <valueName>Pepper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produce</controllingFieldValue>
+            <valueName>Other High Wire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produce</controllingFieldValue>
+            <valueName>Strawberry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produce</controllingFieldValue>
+            <valueName>Other Soft Fruit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produce</controllingFieldValue>
+            <valueName>Lettuce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produce</controllingFieldValue>
+            <valueName>Herbs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produce</controllingFieldValue>
+            <valueName>Other Leafy Vegetables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ornamental</controllingFieldValue>
+            <valueName>Phalaenopsis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ornamental</controllingFieldValue>
+            <valueName>Cut Roses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ornamental</controllingFieldValue>
+            <valueName>Cut Chrysanthemum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ornamental</controllingFieldValue>
+            <valueName>Other Cut Flowers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ornamental</controllingFieldValue>
+            <valueName>Annuals &amp; Perennials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ornamental</controllingFieldValue>
+            <valueName>Flowering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ornamental</controllingFieldValue>
+            <valueName>Flowering Potted Plants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ornamental</controllingFieldValue>
+            <valueName>Other Potted Plants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research</controllingFieldValue>
+            <valueName>Tissue Culture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research</controllingFieldValue>
+            <valueName>Genetics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research</controllingFieldValue>
+            <valueName>Breeding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research</controllingFieldValue>
+            <valueName>Other Research</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

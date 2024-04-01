@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Details_Before_Received_PO</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(Reason__c),	 ISBLANK(Additional_Reason_Details__c),!ISBLANK(Reason__c))</errorConditionFormula>
+    <errorMessage>Additional Reason Details should be filled before change Opportunity Stage to &quot;Received PO&quot;</errorMessage>
+</ValidationRule>

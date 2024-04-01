@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Margin__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(CASESAFEID(Quote.Opportunity.Pricebook2Id) = &quot;01s5e00000D8P4GAAV&quot;,CASESAFEID(Quote.Opportunity.Pricebook2Id)=&quot;01s5e00000D8P4HAAV&quot;,Quote.Opportunity.Pricebook2Id =&quot;01s5e00000D8P4IAAV&quot;,CASESAFEID(Quote.Opportunity.Pricebook2Id) = &quot;01s5e00000D8P4JAAV&quot;,CASESAFEID(Quote.Opportunity.Pricebook2Id)= &quot;01s5e00000D8P4LAAV&quot;),
+((UnitPrice - Product2.AMEA_ICOS__c )/UnitPrice) ,
+((UnitPrice - Product2.EMEA_ICOS__c )/ UnitPrice))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Margin</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

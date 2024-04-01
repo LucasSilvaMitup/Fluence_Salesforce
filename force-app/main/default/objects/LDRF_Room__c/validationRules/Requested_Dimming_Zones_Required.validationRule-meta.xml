@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_Dimming_Zones_Required</fullName>
+    <active>true</active>
+    <description>Requested Dimming Zones required when DC Flex or Wireless Flex Dim is chosen in Electrical Specifications Section</description>
+    <errorConditionFormula>AND(
+$Setup.Bypass_Configuration__c.LDRF_ROOM_Validation_Rule__c = FALSE,
+OR(
+INCLUDES( Electrical_Specifications_Section__c , &apos;DC Flex&apos;),
+INCLUDES( Electrical_Specifications_Section__c , &apos;Wireless Flex Dim&apos;)
+),
+OR( ISNULL(   Requested_Dimming_Zones__c ) ,ISBLANK( Requested_Dimming_Zones__c )) )</errorConditionFormula>
+    <errorDisplayField>Requested_Dimming_Zones__c</errorDisplayField>
+    <errorMessage>Requested Dimming Zones is required when DC Flex / Wireless Flex Dim is chosen for Electrical Specifications Section.</errorMessage>
+</ValidationRule>

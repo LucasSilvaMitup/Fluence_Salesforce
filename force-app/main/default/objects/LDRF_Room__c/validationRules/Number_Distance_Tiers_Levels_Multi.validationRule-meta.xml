@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_Distance_Tiers_Levels_Multi</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Setup.Bypass_Configuration__c.LDRF_ROOM_Validation_Rule__c	= FALSE,
+				OR(
+								ISBLANK(Number_of_Tiers__c), 
+												ISNULL(Number_of_Tiers__c),
+								ISBLANK(Distance_between_Tiers__c ), 
+												ISNULL(Distance_between_Tiers__c )),
+				ISPICKVAL(No_of_Levels__c,&apos;Multi-level&apos;))</errorConditionFormula>
+    <errorMessage>Number of Tiers and Distance between Tiers are required for Multi-level No. of Levels.</errorMessage>
+</ValidationRule>

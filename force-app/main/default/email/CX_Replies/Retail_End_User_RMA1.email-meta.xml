@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Retail End User RMA</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Retail End User RMA</name>
+    <style>none</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>I&apos;m sorry to hear about the trouble, but thank you for reaching out.  As you purchased your fixture through an Authorized Retailer, to service your warranty issue you will need to reach out to the store from where you made your purchase. In this case, XXxSTORE NAMExXX will be able to help you out with a replacement and may have a replacement part on hand. The store will need to file the warranty on your behalf since they are the original purchaser through Fluence. When you go in for service, please provide the store the serial number off of your fixture as they will need this to start a warranty claim.
+
+Thanks and if you have any trouble please let us know.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

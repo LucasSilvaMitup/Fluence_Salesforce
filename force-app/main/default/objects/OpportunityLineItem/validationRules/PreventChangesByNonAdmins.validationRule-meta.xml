@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreventChangesByNonAdmins</fullName>
+    <active>true</active>
+    <description>Prevent any changes made by non admins</description>
+    <errorConditionFormula>$Profile.Name &lt;&gt; &apos;System Administrator&apos;</errorConditionFormula>
+    <errorMessage>You don&apos;t have the necessary permission to create or edit opportunity products.</errorMessage>
+</ValidationRule>

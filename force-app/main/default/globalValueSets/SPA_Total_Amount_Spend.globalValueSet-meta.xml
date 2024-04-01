@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>&lt;$1M</fullName>
+        <default>false</default>
+        <label>&lt;$1M</label>
+    </customValue>
+    <customValue>
+        <fullName>$1M - $3M</fullName>
+        <default>false</default>
+        <label>$1M - $3M</label>
+    </customValue>
+    <customValue>
+        <fullName>$3M - $5M</fullName>
+        <default>false</default>
+        <label>$3M - $5M</label>
+    </customValue>
+    <customValue>
+        <fullName>$5M - $10M</fullName>
+        <default>false</default>
+        <label>$5M - $10M</label>
+    </customValue>
+    <customValue>
+        <fullName>$10M +</fullName>
+        <default>false</default>
+        <label>$10M +</label>
+    </customValue>
+    <masterLabel>SPA Total Amount Spend</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

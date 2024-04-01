@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>m</fullName>
+        <default>false</default>
+        <label>m</label>
+    </customValue>
+    <customValue>
+        <fullName>mm</fullName>
+        <default>false</default>
+        <label>mm</label>
+    </customValue>
+    <customValue>
+        <fullName>inches</fullName>
+        <default>false</default>
+        <label>inches</label>
+    </customValue>
+    <customValue>
+        <fullName>feet</fullName>
+        <default>false</default>
+        <label>feet</label>
+    </customValue>
+    <masterLabel>Units of Measure</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

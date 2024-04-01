@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>High Wire</fullName>
+        <default>false</default>
+        <label>High Wire</label>
+    </customValue>
+    <customValue>
+        <fullName>Single Plane</fullName>
+        <default>false</default>
+        <label>Single Plane</label>
+    </customValue>
+    <customValue>
+        <fullName>Single Level</fullName>
+        <default>false</default>
+        <label>Single Level</label>
+    </customValue>
+    <customValue>
+        <fullName>Vertical</fullName>
+        <default>false</default>
+        <label>Vertical</label>
+    </customValue>
+    <customValue>
+        <fullName>Rolling Multi-Tier</fullName>
+        <default>false</default>
+        <label>Rolling Multi-Tier</label>
+    </customValue>
+    <customValue>
+        <fullName>Static Multi-Tier</fullName>
+        <default>false</default>
+        <label>Static Multi-Tier</label>
+    </customValue>
+    <masterLabel>Application Detail</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

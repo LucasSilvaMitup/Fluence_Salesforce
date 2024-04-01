@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Posiiton_Rolling_Required_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Setup.Bypass_Configuration__c.LDRF_ROOM_Validation_Rule__c = FALSE,
+ISPICKVAL( Position__c , &apos;Rolling&apos;),
+OR( ISNULL(  Mobile_Aisle_Spacing__c  ) ,ISBLANK( Mobile_Aisle_Spacing__c ), ISNULL(   Resting_Position_Spacing__c   ) ,ISBLANK( Resting_Position_Spacing__c )) )</errorConditionFormula>
+    <errorMessage>Resting Position Spacing and Mobile Aisle Spacing cannot be blank when Position is Rolling.</errorMessage>
+</ValidationRule>

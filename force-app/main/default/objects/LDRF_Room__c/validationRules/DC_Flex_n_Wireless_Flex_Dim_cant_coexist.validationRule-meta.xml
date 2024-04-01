@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DC_Flex_n_Wireless_Flex_Dim_cant_coexist</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Setup.Bypass_Configuration__c.LDRF_ROOM_Validation_Rule__c = FALSE,
+INCLUDES( Electrical_Specifications_Section__c , &apos;DC Flex&apos;),
+INCLUDES( Electrical_Specifications_Section__c , &apos;Wireless Flex Dim&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Electrical_Specifications_Section__c</errorDisplayField>
+    <errorMessage>DC Flex and Wireless Flex Dim cannot be chosen together for Electrical Specifications Section.</errorMessage>
+</ValidationRule>

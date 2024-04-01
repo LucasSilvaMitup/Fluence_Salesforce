@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CC Hold Warning</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CC Hold Warning</name>
+    <style>none</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>Hello {!Case.Contact},
+
+We recently sent you a replacement for the faulty XxxFaulty Item NamexxX  from your Fluence Order # XxxOrder #xxX. I hope you are pleased with your replacement!
+
+As you may recall, part of the replacement process involved placing a hold for the value of the part on your credit card ending in XXxLast 4 DigitsxxX. I just wanted to send you a friendly reminder that you will need to send the faulty part back to our facility within 25 days of the credit hold date in order to avoid being charged for the replacement. If you have not shipped the item by XXxCharge DatexxX, your card will be charged Xxx AmountxxX.
+
+If you have already sent back the materials, or if the package is currently in transit, please reply to this message with the package’s tracking information to avoid being charged. Otherwise, please pack up the item(s) and ship it back to the address below. Please ensure the following:
+
+Remove all mounting hardware and accessories before packing. Technicians will not be responsible for any lost accessories or mounting hardware sent with your shipment.
+Shipping insurance is highly recommended on return packages of values greater than $100.
+
+PLEASE SHIP TO:
+
+Fluence Bioengineering
+RMA# {!Case.QN__c}
+4129 Commercial Center Drive
+Dock #13
+Austin, Texas 78744
+
+Thank you for your understanding. If you have any questions or concerns, please don’t hesitate to contact us!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

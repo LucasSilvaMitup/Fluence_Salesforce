@@ -1,0 +1,9 @@
+A new case has been assigned for your queue. Please review the below information.
+
+Company: {!Account.Name}
+Opportunity: {!Case.Opportunity__c}
+Contact Name: {!Contact.Name}
+Priority: {!Case.Priority}
+Case #: {!Case.CaseNumber}
+
+Click on the link to access the case:  {!Case.Link}

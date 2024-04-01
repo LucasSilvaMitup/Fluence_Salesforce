@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Panel_Mount_mandatory_for_AC_Flex</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Setup.Bypass_Configuration__c.LDRF_ROOM_Validation_Rule__c = FALSE,
+INCLUDES( Electrical_Specifications_Section__c , &apos;AC Flex&apos;) ,
+OR( ISNULL(  Panel_Mount_AFF__c ) ,ISBLANK( Panel_Mount_AFF__c )) )</errorConditionFormula>
+    <errorDisplayField>Panel_Mount_AFF__c</errorDisplayField>
+    <errorMessage>Panel Mount (AFF) is required when AC Flex is chosen for Electrical Specifications Section.</errorMessage>
+</ValidationRule>

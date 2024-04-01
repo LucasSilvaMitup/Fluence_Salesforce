@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Mixed_System_Indoor_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+				AND(
+								ISPICKVAL(System__c, &apos;Mixed (LED + HPS, etc)&apos;),
+								RecordType.Name = &apos;Indoor&apos;,
+								ISBLANK(Wattage__c)
+				),
+				TRUE,
+				FALSE
+)</errorConditionFormula>
+    <errorMessage>Wattage should not be blank when System is Mixed (LED + HPS, etc).</errorMessage>
+</ValidationRule>

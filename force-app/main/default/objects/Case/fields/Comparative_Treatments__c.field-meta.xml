@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comparative_Treatments__c</fullName>
+    <externalId>false</externalId>
+    <label>Comparative Treatments</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Define the spectrums</fullName>
+                <default>false</default>
+                <label>Define the spectrums</label>
+            </value>
+            <value>
+                <fullName>Wattage match</fullName>
+                <default>false</default>
+                <label>Wattage match</label>
+            </value>
+            <value>
+                <fullName>PPFD match</fullName>
+                <default>false</default>
+                <label>PPFD match</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

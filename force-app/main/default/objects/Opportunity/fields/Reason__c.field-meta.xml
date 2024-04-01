@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CapEx</fullName>
+                <default>false</default>
+                <label>CapEx</label>
+            </value>
+            <value>
+                <fullName>Terms</fullName>
+                <default>false</default>
+                <label>Terms</label>
+            </value>
+            <value>
+                <fullName>Technical Features</fullName>
+                <default>false</default>
+                <label>Technical Features</label>
+            </value>
+            <value>
+                <fullName>Portfolio Gap</fullName>
+                <default>false</default>
+                <label>Portfolio Gap</label>
+            </value>
+            <value>
+                <fullName>Relationships/Politics</fullName>
+                <default>false</default>
+                <label>Relationships/Politics</label>
+            </value>
+            <value>
+                <fullName>Quality Issues</fullName>
+                <default>false</default>
+                <label>Quality Issues</label>
+            </value>
+            <value>
+                <fullName>Late Entry</fullName>
+                <default>false</default>
+                <label>Late Entry</label>
+            </value>
+            <value>
+                <fullName>Lack of LED Experience</fullName>
+                <default>false</default>
+                <label>Lack of LED Experience</label>
+            </value>
+            <value>
+                <fullName>Lack of Reference</fullName>
+                <default>false</default>
+                <label>Lack of Reference</label>
+            </value>
+            <value>
+                <fullName>Warranty</fullName>
+                <default>false</default>
+                <label>Warranty</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>No License</fullName>
+                <default>false</default>
+                <label>No License</label>
+            </value>
+            <value>
+                <fullName>Lost Facility/Property</fullName>
+                <default>false</default>
+                <label>Lost Facility/Property</label>
+            </value>
+            <value>
+                <fullName>Lost Budget/Financing</fullName>
+                <default>false</default>
+                <label>Lost Budget/Financing</label>
+            </value>
+            <value>
+                <fullName>No Response</fullName>
+                <default>false</default>
+                <label>No Response</label>
+            </value>
+            <value>
+                <fullName>Postponed</fullName>
+                <default>false</default>
+                <label>Postponed</label>
+            </value>
+            <value>
+                <fullName>Salesmanship</fullName>
+                <default>false</default>
+                <label>Salesmanship</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Brand</fullName>
+                <default>false</default>
+                <label>Brand</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Financing</fullName>
+                <default>false</default>
+                <label>Financing</label>
+            </value>
+            <value>
+                <fullName>Product/Product Feature(s)</fullName>
+                <default>false</default>
+                <label>Product/Product Feature(s)</label>
+            </value>
+            <value>
+                <fullName>Horticulture Services</fullName>
+                <default>false</default>
+                <label>Horticulture Services</label>
+            </value>
+            <value>
+                <fullName>Rebate Services</fullName>
+                <default>false</default>
+                <label>Rebate Services</label>
+            </value>
+            <value>
+                <fullName>Solution Architects</fullName>
+                <default>false</default>
+                <label>Solution Architects</label>
+            </value>
+            <value>
+                <fullName>Relationship/Consultant</fullName>
+                <default>false</default>
+                <label>Relationship/Consultant</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Won</controllingFieldValue>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <controllingFieldValue>Inactive</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Won</controllingFieldValue>
+            <valueName>Salesmanship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Won</controllingFieldValue>
+            <valueName>Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Won</controllingFieldValue>
+            <valueName>Brand</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Won</controllingFieldValue>
+            <valueName>Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Won</controllingFieldValue>
+            <valueName>Financing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Won</controllingFieldValue>
+            <valueName>Product/Product Feature(s)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Won</controllingFieldValue>
+            <valueName>Horticulture Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Won</controllingFieldValue>
+            <valueName>Rebate Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Won</controllingFieldValue>
+            <valueName>Solution Architects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Won</controllingFieldValue>
+            <valueName>Relationship/Consultant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>CapEx</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Terms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Technical Features</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Portfolio Gap</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Relationships/Politics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Quality Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Late Entry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Lack of LED Experience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Lack of Reference</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Warranty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive</controllingFieldValue>
+            <valueName>No License</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive</controllingFieldValue>
+            <valueName>Lost Facility/Property</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive</controllingFieldValue>
+            <valueName>Lost Budget/Financing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive</controllingFieldValue>
+            <valueName>No Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive</controllingFieldValue>
+            <valueName>Postponed</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

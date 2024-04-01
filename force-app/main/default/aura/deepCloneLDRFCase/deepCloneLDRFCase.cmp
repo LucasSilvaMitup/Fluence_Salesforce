@@ -1,0 +1,38 @@
+<!--
+@Author: Allan Pecli
+@Company: HCL Technologies
+@Component: DeepClone LDRF Case component for Quick Action on Case
+@Comments: 
+@Created Date: 02/17/2022
+@Version: 0.0
+
+Modification Log:
+==========================================================================================
+@Version		@Author			@Date			@Reason 
+==========================================================================================
+ -->
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,flexipage:availableForAllPageTypes,lightning:isUrlAddressable" controller="deepCloneLDRFCaseController" >
+	<!--center><b>LDRF is being cloned..........</b></center-->
+    <lightning:spinner variant="brand" class="slds-show backgroundSpinner" size="medium" />
+
+<aura:html tag="style">
+    .slds-backdrop {
+        background: rgba(43, 40, 38, 0) !important;
+    }
+    .backgroundSpinner{
+        background: rgba(0, 0, 0, 0) !important;
+    }
+    .modal-body {
+        background: rgba(0, 0, 0, 0) !important;
+        box-shadow: none !important;
+    }
+    .closeIcon {
+        display:none !important;
+    }
+    .desktop {
+        overflow: visible !important;
+    }
+</aura:html>
+    <aura:handler name="init" value="{!this}" action="{!c.deepCloneLDRF}"/>   
+    <aura:attribute name="recordId" type="String" />
+</aura:component>

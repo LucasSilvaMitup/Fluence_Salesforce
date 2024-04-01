@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Contact Form RMA Response</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Contact Form RMA Response</name>
+    <style>none</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>Hello,
+
+My name is XxxNamexxX, with the Fluence Customer Experience team. I&apos;m sorry to hear you are experiencing issues with your light! Based on your description of the problem, it sounds like we will need to replace the XXxpartxxX of your fixture. Please select from one of the following options as to how you&apos;d like to proceed with initiating your warranty claim:
+
+1. You ship the faulty XXxpartxxX back to us at your convenience. Once you have notified us that you have shipped it, we will send you a replacement while it is still in transit. This process typically takes 4-5 business days from the day you ship the damaged item.
+
+2. If you are in a bit of a time crunch, we can ship a replacement to you right away. In order to use this option, we would place a hold on a credit card of your choice for the value of the item XXxvaluexxX, which we will void provided the faulty item is returned to us within 25 days.
+
+Let me know which option works best for you, and I will get to work on your warranty claim right away!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

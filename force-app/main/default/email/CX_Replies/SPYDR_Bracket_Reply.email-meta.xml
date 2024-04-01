@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SPYDR Bracket Reply</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SPYDR Bracket Reply</name>
+    <style>none</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>Hello {!Case.Contact},
+
+My name is Xxx_NAME_xxX, with Fluence Customer Support. I am sorry to hear that you are experiencing issues with your SPYDR light bar bracket. Unfortunately these brackets are not available for sale and are not covered under warranty. If you need a replacement, you can instead purchase a new light bar assembly for $130.00 USD [Plus Tax if applicable]. I understand that this is an inconvenience and sincerely apologize. If you would like me to set up an order for a new light bar please let me know. If there is anything else that I can do in the meantime, don&apos;t hesitate to ask!
+
+Thanks</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

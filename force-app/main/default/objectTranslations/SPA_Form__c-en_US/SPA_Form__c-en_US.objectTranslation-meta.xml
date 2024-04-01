@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SPA Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SPA Forms</value>
+    </caseValues>
+    <layouts>
+        <layout>SPA Form Layout with Visibility</layout>
+        <sections>
+            <label></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Finance</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPA Form Without Visibility</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>SPA_with_Visibility</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SPA_without_Visibility</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Sample_Trial_Request</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>PreventSPAStatusChangedDuringCreation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_OthersUsers_ChangeSPAToApproved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_SPA_FinalApp_Without_Reason_Deta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_SPA_FinanceRev_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_SPA_OppsRev_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_SPA_OppsRevi_Without_Fill_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_SPA_PreApp_Without_Reason_Deta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_users_modify_approved_denied_spa</name>
+    </validationRules>
+</CustomObjectTranslation>

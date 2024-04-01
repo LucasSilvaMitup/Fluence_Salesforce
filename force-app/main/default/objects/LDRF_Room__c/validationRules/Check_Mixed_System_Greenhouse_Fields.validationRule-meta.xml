@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Mixed_System_Greenhouse_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+				AND(
+								ISPICKVAL(System__c, &apos;Mixed (LED + HPS, etc)&apos;),
+								RecordType.Name = &apos;Greenhouse&apos;,
+								OR(
+												ISBLANK(Wattage__c),
+												ISBLANK(Qty_fixtures_per_truss__c),  
+												ISBLANK(Qty_HPS_per_truss__c))
+				),
+				TRUE,
+				FALSE
+)</errorConditionFormula>
+    <errorMessage>Wattage, Qty fixtures per truss and Qty HPS per truss should not be blank when System is Mixed (LED + HPS, etc).</errorMessage>
+</ValidationRule>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BD SAMPLE</fullName>
+        <default>false</default>
+        <label>BD SAMPLE</label>
+    </customValue>
+    <customValue>
+        <fullName>NA SAMPLE</fullName>
+        <default>false</default>
+        <label>NA SAMPLE</label>
+    </customValue>
+    <customValue>
+        <fullName>HS TRIAL</fullName>
+        <default>false</default>
+        <label>HS TRIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>FAE PACK</fullName>
+        <default>false</default>
+        <label>FAE PACK</label>
+    </customValue>
+    <customValue>
+        <fullName>EMEA SAMPLE</fullName>
+        <default>false</default>
+        <label>EMEA SAMPLE</label>
+    </customValue>
+    <customValue>
+        <fullName>DIMFLEX</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DIMFLEX</label>
+    </customValue>
+    <customValue>
+        <fullName>EDU10</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EDU10</label>
+    </customValue>
+    <customValue>
+        <fullName>EDU15</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EDU15</label>
+    </customValue>
+    <customValue>
+        <fullName>EDU27</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EDU27</label>
+    </customValue>
+    <customValue>
+        <fullName>EDU5</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EDU5</label>
+    </customValue>
+    <customValue>
+        <fullName>EDU6</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EDU6</label>
+    </customValue>
+    <customValue>
+        <fullName>EMEA ACCY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EMEA ACCY</label>
+    </customValue>
+    <customValue>
+        <fullName>EMEA SALES</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EMEA SALES</label>
+    </customValue>
+    <customValue>
+        <fullName>EMEA TRIAL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EMEA TRIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>EMP40</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EMP40</label>
+    </customValue>
+    <customValue>
+        <fullName>FLEX100</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FLEX100</label>
+    </customValue>
+    <customValue>
+        <fullName>GT100</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GT100</label>
+    </customValue>
+    <customValue>
+        <fullName>GT50</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GT50</label>
+    </customValue>
+    <customValue>
+        <fullName>ACCY CNMT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ACCY CNMT</label>
+    </customValue>
+    <customValue>
+        <fullName>NA ACCY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NA ACCY</label>
+    </customValue>
+    <customValue>
+        <fullName>NA SALES</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NA SALES</label>
+    </customValue>
+    <customValue>
+        <fullName>NA TRIAL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NA TRIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>PROMO</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PROMO</label>
+    </customValue>
+    <customValue>
+        <fullName>PS CNMT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PS CNMT</label>
+    </customValue>
+    <customValue>
+        <fullName>PS CNMT HS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PS CNMT HS</label>
+    </customValue>
+    <customValue>
+        <fullName>RESEARCH</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>RESEARCH</label>
+    </customValue>
+    <customValue>
+        <fullName>SR2IRPP21</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SR2IRPP21</label>
+    </customValue>
+    <customValue>
+        <fullName>WARRANTY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WARRANTY</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTRY ERR</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ENTRY ERR</label>
+    </customValue>
+    <customValue>
+        <fullName>LIST</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LIST</label>
+    </customValue>
+    <customValue>
+        <fullName>MKTG</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MKTG</label>
+    </customValue>
+    <customValue>
+        <fullName>SHIP ERROR</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SHIP ERROR</label>
+    </customValue>
+    <customValue>
+        <fullName>LB CNMT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LB CNMT</label>
+    </customValue>
+    <customValue>
+        <fullName>ACFLEX</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ACFLEX</label>
+    </customValue>
+    <customValue>
+        <fullName>BD ACCY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>BD ACCY</label>
+    </customValue>
+    <customValue>
+        <fullName>BD TRIAL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>BD TRIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>CUSTEXP</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CUSTEXP</label>
+    </customValue>
+    <masterLabel>Promotion Code</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

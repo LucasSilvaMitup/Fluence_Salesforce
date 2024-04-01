@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technical_Support_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Technical Support Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-sales Support/Application Support</fullName>
+                <default>false</default>
+                <label>Pre-sales Support/Application Support</label>
+            </value>
+            <value>
+                <fullName>Installation Support</fullName>
+                <default>false</default>
+                <label>Installation Support</label>
+            </value>
+            <value>
+                <fullName>Post-Sale Product/Application Support</fullName>
+                <default>false</default>
+                <label>Post-Sale Product/Application Support</label>
+            </value>
+            <value>
+                <fullName>Field Product Quality</fullName>
+                <default>false</default>
+                <label>Field Product Quality</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

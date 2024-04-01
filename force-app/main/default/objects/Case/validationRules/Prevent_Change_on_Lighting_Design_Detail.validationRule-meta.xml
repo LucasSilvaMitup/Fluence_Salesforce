@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Change_on_Lighting_Design_Detail</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND ( OR(ISCHANGED( Photometric_Design__c ) ,
+ISCHANGED( Project_Fixture_Quantity__c),
+ISCHANGED( Spectrum__c ) ,
+ISCHANGED( Flex_Design__c),
+ISCHANGED( Flex_system_used_in_design__c) ,
+ISCHANGED( Fixtures_used_in_design__c)) ,
+RecordType.Name = &apos;LDRF&apos;,
+OR(ISPICKVAL ( Status, &quot;Complete&quot;),
+ISPICKVAL ( Status, &quot;Closed&quot;)
+)
+)</errorConditionFormula>
+    <errorMessage>You can&apos;t change the fileds on the Lighting Design Details section in a completed or closed case.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preventing_User_Changes</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Setup.Bypass_Configuration__c.Opportunity_Validation_Rule__c= FALSE,
+				!$User.Allow_Opportunity_Line_Item_Pricing__c,
+				ISCHANGED(Designed_tier_pricing__c)
+)</errorConditionFormula>
+    <errorDisplayField>Designed_tier_pricing__c</errorDisplayField>
+    <errorMessage>Only specific users are allowed to set Designed Tier Pricing field.</errorMessage>
+</ValidationRule>

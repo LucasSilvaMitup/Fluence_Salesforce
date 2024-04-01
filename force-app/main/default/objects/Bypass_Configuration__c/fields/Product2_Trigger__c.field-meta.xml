@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product2_Trigger__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox to inform if user changes needs to bypass Product2 triggers.</description>
+    <externalId>false</externalId>
+    <label>Product2 Trigger</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

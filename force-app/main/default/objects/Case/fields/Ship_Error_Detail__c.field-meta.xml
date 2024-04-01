@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_Error_Detail__c</fullName>
+    <externalId>false</externalId>
+    <label>Ship Error Detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type_of_Ship_Error__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Shipped incorrect part</fullName>
+                <default>false</default>
+                <label>Shipped incorrect part</label>
+            </value>
+            <value>
+                <fullName>Shipped short</fullName>
+                <default>false</default>
+                <label>Shipped short</label>
+            </value>
+            <value>
+                <fullName>Shipped too many</fullName>
+                <default>false</default>
+                <label>Shipped too many</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Mispack</controllingFieldValue>
+            <valueName>Shipped incorrect part</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mispack</controllingFieldValue>
+            <valueName>Shipped short</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mispack</controllingFieldValue>
+            <valueName>Shipped too many</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

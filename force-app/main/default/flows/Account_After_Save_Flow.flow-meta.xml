@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <decisions>
+        <description>Set Sales Team Field based on Account Owner Name
+US: SFS-231</description>
+        <name>Set_Sales_Team_Field_based_on_Account_Owner_Name</name>
+        <label>Set Sales Team Field based on Account Owner Name</label>
+        <locationX>842</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Set_Sales_Team_as_Direct_Cannabis_North_America</name>
+            <conditionLogic>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9) AND 10</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner.Email</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>aaron.fellabaum@fluencebioengineering.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner.Email</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bhavanam.Phanindra@fluencebioengineering.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner.Email</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>tim.kiefer@fluencebioengineering.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner.Email</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>aaron.johnson@fluencebioengineering.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner.Email</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>adam.edwards@fluencebioengineering.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner.Email</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>alex.randolph@fluencebioengineering.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner.Email</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>andrew.mahr@fluencebioengineering.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner.Email</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>jake.hubert@fluencebioengineering.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner.Email</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>logan.patterson@fluencebioengineering.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Account</targetReference>
+            </connector>
+            <label>Set Sales Team as Direct Cannabis – North America</label>
+        </rules>
+        <rules>
+            <name>Set_Sales_Team_as_Direct_Commercial_Agriculture_North_America</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Michael Hanan</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ashley Veach</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Brad Susko</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tyler Sandison</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Account_0</targetReference>
+            </connector>
+            <label>Set Sales Team as Direct Commercial Agriculture – North America</label>
+        </rules>
+        <rules>
+            <name>Set_Sales_Team_as_Americas_Authorized_Reseller</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Michael Lucchino</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Marc Miller</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Emily Miller</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Eric Fowler</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Finn DeCaulp</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Account_0_0</targetReference>
+            </connector>
+            <label>Set Sales Team as Americas Authorized Reseller</label>
+        </rules>
+        <rules>
+            <name>Set_Sales_Team_as_APAC</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Joyce He</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Richie Li</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tiantian Liu</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bhavanam Phanindra</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Account_0_0_0</targetReference>
+            </connector>
+            <label>Set Sales Team as APAC</label>
+        </rules>
+        <rules>
+            <name>Set_Sales_Team_as_EMEA_Direct_Cannabis</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Andre Lagareiro</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Jorg Meyer-Brenken</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Account_0_0_0_0</targetReference>
+            </connector>
+            <label>Set Sales Team as EMEA Direct Cannabis</label>
+        </rules>
+        <rules>
+            <name>Set_Sales_Team_as_EMEA_Direct_Commercial_Agriculture</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Andre Gulliksen</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Dennis Raadschelders</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Farkhad Mamadaliev</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordOwnerName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Niko Kirsten</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Account_0_0_0_0_0</targetReference>
+            </connector>
+            <label>Set Sales Team as EMEA Direct Commercial Agriculture</label>
+        </rules>
+    </decisions>
+    <description>This flow is used to perform any operations after saving record into DB.</description>
+    <formulas>
+        <name>recordOwnerName</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Owner.FirstName} + &quot; &quot; + {!$Record.Owner.LastName}</expression>
+    </formulas>
+    <interviewLabel>Account After Save Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account After Save Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Account</name>
+        <label>Update Account</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Sales_Team__c</field>
+            <value>
+                <stringValue>Direct Cannabis – North America</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Account_0</name>
+        <label>Update Account</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Sales_Team__c</field>
+            <value>
+                <stringValue>Direct Commercial Agriculture – North America</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Account_0_0</name>
+        <label>Update Account</label>
+        <locationX>578</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Sales_Team__c</field>
+            <value>
+                <stringValue>AR – North America</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Account_0_0_0</name>
+        <label>Update Account</label>
+        <locationX>842</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Sales_Team__c</field>
+            <value>
+                <stringValue>APAC</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Account_0_0_0_0</name>
+        <label>Update Account</label>
+        <locationX>1106</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Sales_Team__c</field>
+            <value>
+                <stringValue>Direct Cannabis – EMEA</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Account_0_0_0_0_0</name>
+        <label>Update Account</label>
+        <locationX>1370</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Sales_Team__c</field>
+            <value>
+                <stringValue>Direct Commercial Agriculture – EMEA</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>716</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Sales_Team_Field_based_on_Account_Owner_Name</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>DirectCannabis_NorthAmerica</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

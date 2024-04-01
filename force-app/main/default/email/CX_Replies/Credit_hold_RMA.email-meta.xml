@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Credit hold RMA</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Credit hold RMA</name>
+    <style>none</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>Hello {!Case.Contact},
+
+Thanks for your time today!
+
+Per our conversation, I have created replacement orders in our system for your Xxx_faulty item_xxX. These have been authorized as RMA# {!Case.QN__c} - please hold on to this number for your records. Your replacement will be leaving our facility within the next 2 business days.
+
+Additionally, I have initiated a hold on your credit card for the value of your replacement item. This hold will appear on your statement as a pending transaction of Xxx_$value_xxX from Fluence Bioengineering.
+
+Please pack up the item in the packaging your replacement will arrive in and ship it to the address below. Please ensure the following:
+
+•	Remove all mounting hardware and accessories before packing. Technicians will not be responsible for any lost accessories or mounting hardware sent with your fixture and/or power supply.
+•	Shipping insurance is highly recommended on return packages of values greater than $100
+
+
+Ship To:
+
+Fluence Bioengineering{!Case.QN__c}4129 Commercial Center DriveDock #13Austin, Texas 78744
+
+Be sure to send the faulty part back AND REPLY WITH TRACKING INFO by [CC Charge Date] to avoid a charge to your card.
+
+If you have any questions, please don&apos;t hesitate to ask!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

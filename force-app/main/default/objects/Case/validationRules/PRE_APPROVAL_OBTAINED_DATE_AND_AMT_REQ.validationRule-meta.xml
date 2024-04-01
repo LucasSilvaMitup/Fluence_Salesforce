@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRE_APPROVAL_OBTAINED_DATE_AND_AMT_REQ</fullName>
+    <active>true</active>
+    <description>PRE_APPROVAL_OBTAINED_DATE_AND_AMT_REQ</description>
+    <errorConditionFormula>AND(
+ 
+ $Setup.Bypass_Configuration__c.Case_Validation_Rule__c	= FALSE,
+ Pre_approval_obtained__c ,
+ OR(
+ ISBLANK( Pre_approval_obtain_date__c ) ,
+ ISBLANK( Pre_approval_amount__c ) 
+) 
+)</errorConditionFormula>
+    <errorDisplayField>Pre_approval_obtain_date__c</errorDisplayField>
+    <errorMessage>Pre-approval obtain date and Pre-approval amount are required.</errorMessage>
+</ValidationRule>

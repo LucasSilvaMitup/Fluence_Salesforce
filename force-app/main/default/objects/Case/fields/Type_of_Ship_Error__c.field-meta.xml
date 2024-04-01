@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Ship_Error__c</fullName>
+    <externalId>false</externalId>
+    <label>Ship Error Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Damaged</fullName>
+                <default>false</default>
+                <label>Damaged</label>
+            </value>
+            <value>
+                <fullName>Lost</fullName>
+                <default>false</default>
+                <label>Lost</label>
+            </value>
+            <value>
+                <fullName>Mispack</fullName>
+                <default>false</default>
+                <label>Mispack</label>
+            </value>
+            <value>
+                <fullName>Mispack-Over-Shipped</fullName>
+                <default>false</default>
+                <label>Mispack-Over-Shipped</label>
+            </value>
+            <value>
+                <fullName>Mispack-Short-shipped</fullName>
+                <default>false</default>
+                <label>Mispack-Short-shipped</label>
+            </value>
+            <value>
+                <fullName>Mispack-Incorrect Part</fullName>
+                <default>false</default>
+                <label>Mispack-Incorrect Part</label>
+            </value>
+            <value>
+                <fullName>Wrong Label</fullName>
+                <default>false</default>
+                <label>Wrong Label</label>
+            </value>
+            <value>
+                <fullName>Issue with Documentation</fullName>
+                <default>false</default>
+                <label>Issue with Documentation</label>
+            </value>
+            <value>
+                <fullName>Wrong IC Codes</fullName>
+                <default>false</default>
+                <label>Wrong IC Codes</label>
+            </value>
+            <value>
+                <fullName>Incorrect Ship to</fullName>
+                <default>false</default>
+                <label>Incorrect Ship to</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

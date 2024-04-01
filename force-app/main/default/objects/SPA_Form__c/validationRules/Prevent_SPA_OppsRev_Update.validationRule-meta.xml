@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_SPA_OppsRev_Update</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				ISCHANGED(Opps_Review_Completed__c), 
+				($Profile.Name &lt;&gt; &apos;System Administrator&apos;),
+				NOT($Permission.SPAOpsReviewCompleteEdit),
+  		NOT(ByPassValidationRules__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Opps_Review_Completed__c</errorDisplayField>
+    <errorMessage>You are not allowed to change &quot;Opps Review Completed&quot; field. Please reach out to System Administrator for additional help.</errorMessage>
+</ValidationRule>

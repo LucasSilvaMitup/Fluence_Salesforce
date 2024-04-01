@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConvertedLeadCheck__c</fullName>
+    <defaultValue>&apos;Converted Lead&apos;</defaultValue>
+    <description>To map with accounts and make sure that the converted leads will not be blocked by the &quot;block account creation&quot; validation rule</description>
+    <externalId>false</externalId>
+    <label>ConvertedLeadCheck</label>
+    <length>40</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

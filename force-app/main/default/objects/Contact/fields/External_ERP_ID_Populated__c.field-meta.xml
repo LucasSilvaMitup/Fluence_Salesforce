@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_ERP_ID_Populated__c</fullName>
+    <externalId>false</externalId>
+    <formula>NOT(ISBLANK(External_ERP_ID__c))</formula>
+    <label>External ERP ID Populated</label>
+    <type>Checkbox</type>
+</CustomField>

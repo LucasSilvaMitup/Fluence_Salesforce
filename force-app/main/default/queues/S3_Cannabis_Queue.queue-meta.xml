@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>S3 Cannabis Queue</name>
+    <queueMembers>
+        <users>
+            <user>circe.lezama@fluencebioengineering.com</user>
+            <user>ginger.brown@fluencebioengineering.com</user>
+            <user>jacob.brown@fluencebioengineering.com</user>
+            <user>tyler.edmunds@fluencebioengineering.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

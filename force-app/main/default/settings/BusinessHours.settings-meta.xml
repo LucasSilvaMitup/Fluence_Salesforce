@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessHoursSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessHours>
+        <active>true</active>
+        <default>true</default>
+        <fridayEndTime>17:00:00.000Z</fridayEndTime>
+        <fridayStartTime>08:00:00.000Z</fridayStartTime>
+        <mondayEndTime>17:00:00.000Z</mondayEndTime>
+        <mondayStartTime>08:00:00.000Z</mondayStartTime>
+        <name>Central US Time</name>
+        <thursdayEndTime>17:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>08:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/Chicago</timeZoneId>
+        <tuesdayEndTime>17:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>08:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>17:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>08:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>00:00:00.000Z</fridayEndTime>
+        <fridayStartTime>00:00:00.000Z</fridayStartTime>
+        <mondayEndTime>00:00:00.000Z</mondayEndTime>
+        <mondayStartTime>00:00:00.000Z</mondayStartTime>
+        <name>Default</name>
+        <saturdayEndTime>00:00:00.000Z</saturdayEndTime>
+        <saturdayStartTime>00:00:00.000Z</saturdayStartTime>
+        <sundayEndTime>00:00:00.000Z</sundayEndTime>
+        <sundayStartTime>00:00:00.000Z</sundayStartTime>
+        <thursdayEndTime>00:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>00:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/Los_Angeles</timeZoneId>
+        <tuesdayEndTime>00:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>00:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>00:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>00:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <holidays>
+        <businessHours>Central US Time</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Christmas</name>
+        <recurrenceDayOfMonth>25</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-12-25</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Central US Time</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Christmas Eve</name>
+        <recurrenceDayOfMonth>24</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-12-24</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Central US Time</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Columbus Day</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Second</recurrenceInstance>
+        <recurrenceMonthOfYear>October</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-10-11</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Central US Time</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Day After Thanksgiving</name>
+        <recurrenceDayOfWeek>Friday</recurrenceDayOfWeek>
+        <recurrenceInstance>Last</recurrenceInstance>
+        <recurrenceMonthOfYear>November</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-11-26</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Central US Time</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Independence Day</name>
+        <recurrenceDayOfMonth>4</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>July</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-07-04</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Central US Time</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Labor Day</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>First</recurrenceInstance>
+        <recurrenceMonthOfYear>September</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-09-06</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Central US Time</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Martin Luther King Jr. Day</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Third</recurrenceInstance>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-01-18</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Central US Time</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Memorial Day</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Last</recurrenceInstance>
+        <recurrenceMonthOfYear>May</recurrenceMonthOfYear>
+        <recurrenceStartDate>2022-05-30</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Central US Time</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>New Year’s Day</name>
+        <recurrenceDayOfMonth>1</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-01-01</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Central US Time</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Presidents&apos; Day</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Third</recurrenceInstance>
+        <recurrenceMonthOfYear>February</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-02-15</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Central US Time</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Thanksgiving Day</name>
+        <recurrenceDayOfWeek>Thursday</recurrenceDayOfWeek>
+        <recurrenceInstance>Last</recurrenceInstance>
+        <recurrenceMonthOfYear>November</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-11-25</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <businessHours>Central US Time</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Veterans Day</name>
+        <recurrenceDayOfMonth>11</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>November</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-11-11</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+</BusinessHoursSettings>

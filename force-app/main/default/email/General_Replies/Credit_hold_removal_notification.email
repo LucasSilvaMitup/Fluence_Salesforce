@@ -1,0 +1,6 @@
+Dear {!AccountTeamMember.Name}
+
+The credit hold on Order No.:{!Order.ERP_Order__c} from Opportunity {!Opportunity.Name} has been removed.
+
+Regards,
+The Fluence Sales Team

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuoteBlocked__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is used to inform if Quote is blocked to changes or not.</description>
+    <externalId>false</externalId>
+    <label>Quote Blocked ?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

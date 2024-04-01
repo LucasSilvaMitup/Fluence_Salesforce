@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Square Feet</fullName>
+        <default>false</default>
+        <label>Square Feet</label>
+    </customValue>
+    <customValue>
+        <fullName>Acres</fullName>
+        <default>false</default>
+        <label>Acres</label>
+    </customValue>
+    <customValue>
+        <fullName>Hectares</fullName>
+        <default>false</default>
+        <label>Hectares</label>
+    </customValue>
+    <masterLabel>SPA Total Cultivation Unit of Measure</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

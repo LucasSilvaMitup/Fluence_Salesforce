@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Quote</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Quote Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;REMINDER! All orders over $100k need to be approved by &lt;/span&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Ginger Brown&lt;/span&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;. Please confirm she has approved.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Approved</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

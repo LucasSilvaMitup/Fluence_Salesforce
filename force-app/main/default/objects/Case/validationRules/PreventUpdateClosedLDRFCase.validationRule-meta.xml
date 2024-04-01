@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreventUpdateClosedLDRFCase</fullName>
+    <active>false</active>
+    <description>Prevent users to edit closed LDRF Cases.</description>
+    <errorConditionFormula>AND(
+				!ISNEW(),
+				IsClosed,
+				RecordType.DeveloperName = &apos;LDRF&apos;
+				)</errorConditionFormula>
+    <errorMessage>Closed LDRF Cases cannot be edited.</errorMessage>
+</ValidationRule>

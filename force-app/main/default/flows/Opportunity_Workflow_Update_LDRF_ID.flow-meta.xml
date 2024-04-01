@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>Isnew</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <name>LDRFAmericas</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(OR(ISPICKVAL( {!$Record.Opportunity__r.Region__c}, &apos;Americas-NA&apos;), ISPICKVAL( {!$Record.Opportunity__r.Region__c}, &apos;Americas-LATAM&apos;), ISPICKVAL( {!$Record.Opportunity__r.Region__c}, &apos;APAC&apos;)),TRUE,FALSE)</expression>
+    </formulas>
+    <formulas>
+        <name>LDRFEMEA</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(ISPICKVAL( {!$Record.Opportunity__r.Region__c}, &apos;EMEA&apos;),TRUE,FALSE)</expression>
+    </formulas>
+    <interviewLabel>Opportunity Workflow - Update - LDRF ID {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Workflow - Update - LDRF ID</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_LDRF_Case_field_on_Opp</name>
+        <label>Update LDRF_Case field on Opp</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Opportunity__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LDRF_Case__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_LDRF_Case_field_on_Opp</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0125e000000Ey4kAAC</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>AnewLDRFformwasassignmenttoEMEAQueue</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 8.52px;&quot;&gt;A new case has been assigned for LDRF Assignment Queue. Please review the below information.&lt;/span&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 8.52px;&quot;&gt;Company: {!$Record.Account.Name}&lt;/span&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 8.52px;&quot;&gt;Opportunity: {!$Record.Opportunity__r.Name}&lt;/span&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 8.52px;&quot;&gt;Priority: {!$Record.Priority}&lt;/span&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 8.52px;&quot;&gt;Case #: {!$Record.CaseNumber}&lt;/span&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 8.52px;&quot;&gt;Click on the link to access the case:&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>AnewLDRFformwasassignmenttoLDRFAmericasQueue</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 8.52px;&quot;&gt;A new case has been assigned for LDRF Assignment Queue. Please review the below information.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 8.52px;&quot;&gt;Company: {!$Record.Account.Name}&lt;/span&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 8.52px;&quot;&gt;Opportunity: {!$Record.Opportunity__r.Name}&lt;/span&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 8.52px;&quot;&gt;Priority: {!$Record.Priority}&lt;/span&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 8.52px;&quot;&gt;Case #: {!$Record.CaseNumber}&lt;/span&gt;
+&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 8.52px;&quot;&gt;Click on the link to access the case:&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <triggerOrder>1120</triggerOrder>
+    <variables>
+        <name>LDRFAmericaQueue</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>LDRF Americas Queue</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>LDRFEMEAQueue</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>LDRF EMEA Queue</stringValue>
+        </value>
+    </variables>
+</Flow>

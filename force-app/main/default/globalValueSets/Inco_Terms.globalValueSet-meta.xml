@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Ex Works (EXW)</fullName>
+        <default>true</default>
+        <label>Ex Works (EXW)</label>
+    </customValue>
+    <customValue>
+        <fullName>Delivered Duty Paid (DDP)</fullName>
+        <default>false</default>
+        <label>Delivered Duty Paid (DDP)</label>
+    </customValue>
+    <customValue>
+        <fullName>Free on Board (FOB)</fullName>
+        <default>false</default>
+        <label>Free on Board (FOB)</label>
+    </customValue>
+    <customValue>
+        <fullName>Cost, Insurance and Freight (CIF)</fullName>
+        <default>false</default>
+        <label>Cost, Insurance and Freight (CIF)</label>
+    </customValue>
+    <customValue>
+        <fullName>Cost &amp; Freight (CFR)</fullName>
+        <default>false</default>
+        <label>Cost &amp; Freight (CFR)</label>
+    </customValue>
+    <customValue>
+        <fullName>Free Alongside Ship (FAS)</fullName>
+        <default>false</default>
+        <label>Free Alongside Ship (FAS)</label>
+    </customValue>
+    <customValue>
+        <fullName>DAP</fullName>
+        <default>false</default>
+        <label>DAP</label>
+    </customValue>
+    <customValue>
+        <fullName>FCA</fullName>
+        <default>false</default>
+        <label>FCA</label>
+    </customValue>
+    <customValue>
+        <fullName>CFT</fullName>
+        <default>false</default>
+        <label>CFT</label>
+    </customValue>
+    <customValue>
+        <fullName>CPR</fullName>
+        <default>false</default>
+        <label>CPR</label>
+    </customValue>
+    <customValue>
+        <fullName>CIP</fullName>
+        <default>false</default>
+        <label>CIP</label>
+    </customValue>
+    <masterLabel>Inco Terms</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

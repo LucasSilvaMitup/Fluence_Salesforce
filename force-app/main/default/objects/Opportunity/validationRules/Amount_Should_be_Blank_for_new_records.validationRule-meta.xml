@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_Should_be_Blank_for_new_records</fullName>
+    <active>true</active>
+    <description>Amount Should be Blank for new records that&apos;s created manually or through Clone Option.
+US: SFS-323</description>
+    <errorConditionFormula>AND
+(
+$Setup.Bypass_Configuration__c.Opportunity_Validation_Rule__c = FALSE,
+ISNEW(),
+ISCLONE() ,
+OR(
+NOT(ISNULL(Amount)),
+Amount &lt;= 0
+)
+)</errorConditionFormula>
+    <errorMessage>Amount should be blank when cloning new records.</errorMessage>
+</ValidationRule>

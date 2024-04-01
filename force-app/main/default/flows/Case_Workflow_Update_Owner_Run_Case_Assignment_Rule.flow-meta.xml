@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Match_Queue</name>
+        <label>Match Queue</label>
+        <locationX>842</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>FAE_APAC_Australia_Queue_0</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>FAE_APAC_Australia_Queue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Field_0</targetReference>
+            </connector>
+            <label>FAE APAC Australia Queue</label>
+        </rules>
+        <rules>
+            <name>FAE_APAC_Queue_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FAE_APAC_Queue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Field_1</targetReference>
+            </connector>
+            <label>FAE APAC Queue</label>
+        </rules>
+        <rules>
+            <name>FAE_AR_Queue_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FAE_AR_Queue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Field</targetReference>
+            </connector>
+            <label>FAE AR Queue</label>
+        </rules>
+        <rules>
+            <name>FAE_Cannabis_Queue_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FAE_Cannabis_Queue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Update_Field</targetReference>
+            </connector>
+            <label>FAE Cannabis Queue</label>
+        </rules>
+        <rules>
+            <name>FAE_Comm_Ag_Queue_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FAE_Comm_Ag_Queue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Update_Field</targetReference>
+            </connector>
+            <label>FAE Comm Ag Queue</label>
+        </rules>
+        <rules>
+            <name>FAE_EMEA_Queue_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FAE_EMEA_Queue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Field_3</targetReference>
+            </connector>
+            <label>FAE EMEA Queue</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>FAE_APAC_Australia_Queue</name>
+        <dataType>Boolean</dataType>
+        <expression>AND( ISPICKVAL( {!$Record.Account.Region__c} , &apos;APAC&apos;),OR({!$Record.RecordType.Name} = &apos;Commissioning&apos;,{!$Record.RecordType.Name}=&apos;Technical Support&apos;),  {!$Record.Account.BillingCountry}  = &apos;Australia&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>FAE_APAC_Queue</name>
+        <dataType>Boolean</dataType>
+        <expression>AND( ISPICKVAL( {!$Record.Account.Region__c} , &apos;APAC&apos;) ,OR({!$Record.RecordType.Name} = &apos;Commissioning&apos;,{!$Record.RecordType.Name}=&apos;Technical Support&apos;),  {!$Record.Account.BillingCountry}  != &apos;Australia&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>FAE_AR_Queue</name>
+        <dataType>Boolean</dataType>
+        <expression>AND( OR(ISPICKVAL( {!$Record.Account.Region__c}, &apos;Americas-NA&apos;), ISPICKVAL( {!$Record.Account.Region__c}, &apos;Americas-LATAM&apos;)), OR(ISPICKVAL( {!$Record.Account.Channel__c}, &apos;AR&apos;), ISPICKVAL({!$Record.Account.Channel__c}, &apos;PAR&apos;)), OR({!$Record.RecordType.Name}= &apos;Commissioning&apos;,{!$Record.RecordType.Name} =&apos;Technical Support&apos;))</expression>
+    </formulas>
+    <formulas>
+        <name>FAE_Cannabis_Queue</name>
+        <dataType>Boolean</dataType>
+        <expression>AND( OR(ISPICKVAL({!$Record.Account.Region__c}, &apos;Americas-NA&apos;), ISPICKVAL( {!$Record.Account.Region__c}, &apos;Americas-LATAM&apos;)), ISPICKVAL( {!$Record.Account.Market__c} , &apos;Cannabis&apos;), ISPICKVAL( {!$Record.Account.Channel__c} , &apos;Direct&apos;), OR({!$Record.RecordType.Name} = &apos;Commissioning&apos;,{!$Record.RecordType.Name}=&apos;Technical Support&apos;) )</expression>
+    </formulas>
+    <formulas>
+        <name>FAE_Comm_Ag_Queue</name>
+        <dataType>Boolean</dataType>
+        <expression>AND( OR(ISPICKVAL( {!$Record.Account.Region__c}, &apos;Americas-NA&apos;), ISPICKVAL( {!$Record.Account.Region__c}, &apos;Americas-LATAM&apos;)), OR(ISPICKVAL( {!$Record.Account.Market__c} , &apos;Ornamental&apos;), ISPICKVAL( {!$Record.Account.Market__c} , &apos;Produce&apos;), ISPICKVAL( {!$Record.Account.Market__c} , &apos;Research&apos;)), ISPICKVAL( {!$Record.Account.Channel__c}, &apos;Direct&apos;),OR({!$Record.RecordType.Name} = &apos;Commissioning&apos;,{!$Record.RecordType.Name}=&apos;Technical Support&apos;))</expression>
+    </formulas>
+    <formulas>
+        <name>FAE_EMEA_Queue</name>
+        <dataType>Boolean</dataType>
+        <expression>AND( ISPICKVAL( {!$Record.Account.Region__c}, &apos;EMEA&apos;),OR({!$Record.RecordType.Name} = &apos;Commissioning&apos;,{!$Record.RecordType.Name}=&apos;Technical Support&apos;) )</expression>
+    </formulas>
+    <interviewLabel>Case Workflow - Update Owner - {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case Workflow - Update Owner - Run Case Assignment Rule</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Copy_1_of_Update_Field</name>
+        <label>Update Field</label>
+        <locationX>842</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G5e000000KCj6EAG</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_2_of_Update_Field</name>
+        <label>Update Field</label>
+        <locationX>1106</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G5e000000KCjB</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Field</name>
+        <label>Update Field</label>
+        <locationX>578</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G5e000000KCiw</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Field_0</name>
+        <label>Update Field</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G5e000000KCim</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Field_1</name>
+        <label>Update Field</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G5e000000KCir</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Field_3</name>
+        <label>Update Field</label>
+        <locationX>1370</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G5e000000KCjG</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>716</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Match_Queue</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0128K000000GrAuQAK</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0128K0000004DZLQA2</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

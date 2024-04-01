@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Flower</fullName>
+        <default>false</default>
+        <label>Flower</label>
+    </customValue>
+    <customValue>
+        <fullName>Vegetative</fullName>
+        <default>false</default>
+        <label>Vegetative</label>
+    </customValue>
+    <customValue>
+        <fullName>Mother</fullName>
+        <default>false</default>
+        <label>Mother</label>
+    </customValue>
+    <customValue>
+        <fullName>Clone</fullName>
+        <default>false</default>
+        <label>Clone</label>
+    </customValue>
+    <customValue>
+        <fullName>Other (please note below)</fullName>
+        <default>false</default>
+        <label>Other (please note below)</label>
+    </customValue>
+    <masterLabel>Lighting Needs Section</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

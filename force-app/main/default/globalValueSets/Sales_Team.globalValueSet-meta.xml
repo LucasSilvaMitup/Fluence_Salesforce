@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Direct Cannabis – North America</fullName>
+        <default>false</default>
+        <label>Direct Cannabis – North America</label>
+    </customValue>
+    <customValue>
+        <fullName>Direct Commercial Agriculture – North America</fullName>
+        <default>false</default>
+        <label>Direct Commercial Agriculture – North America</label>
+    </customValue>
+    <customValue>
+        <fullName>AR – North America</fullName>
+        <default>false</default>
+        <label>AR – North America</label>
+    </customValue>
+    <customValue>
+        <fullName>Direct Cannabis – EMEA</fullName>
+        <default>false</default>
+        <label>Direct Cannabis – EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Direct Commercial Agriculture – EMEA</fullName>
+        <default>false</default>
+        <label>Direct Commercial Agriculture – EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>APAC</fullName>
+        <default>false</default>
+        <label>APAC</label>
+    </customValue>
+    <customValue>
+        <fullName>Direct Commercial Agriculture – APAC</fullName>
+        <default>false</default>
+        <label>Direct Commercial Agriculture – APAC</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Development</fullName>
+        <default>false</default>
+        <label>Business Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>System Integrator – Americas</fullName>
+        <default>false</default>
+        <label>System Integrator – Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>AR - EMEA</fullName>
+        <default>false</default>
+        <label>AR - EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Direct Cannabis – APAC</fullName>
+        <default>false</default>
+        <label>Direct Cannabis – APAC</label>
+    </customValue>
+    <masterLabel>Sales Team</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

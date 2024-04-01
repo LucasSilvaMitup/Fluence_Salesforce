@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preventing_User_ExternalERP_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				$Setup.Bypass_Configuration__c.Account_Validation_Rule__c = FALSE,
+				!CONTAINS($Profile.Name, &apos;S3&apos;),
+				!CONTAINS($Profile.Name, &apos;S3 Manager&apos;),
+				!CONTAINS($Profile.Name, &apos;System Integration&apos;),
+				!CONTAINS($Profile.Name, &apos;System Administrator&apos;),
+				ISCHANGED(External_ERP_ID__c)
+)</errorConditionFormula>
+    <errorDisplayField>External_ERP_ID__c</errorDisplayField>
+    <errorMessage>Only specific users are allowed to update Account External ERP ID field.</errorMessage>
+</ValidationRule>

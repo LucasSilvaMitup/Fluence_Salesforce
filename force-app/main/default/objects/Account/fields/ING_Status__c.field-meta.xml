@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ING_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>ING Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Blacklist</fullName>
+                <default>false</default>
+                <label>Blacklist</label>
+            </value>
+            <value>
+                <fullName>Requested</fullName>
+                <default>false</default>
+                <label>Requested</label>
+            </value>
+            <value>
+                <fullName>Whitelist</fullName>
+                <default>false</default>
+                <label>Whitelist</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

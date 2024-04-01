@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Status_Not_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Setup.Bypass_Configuration__c.Lead_Validation_Rule__c = FALSE,
+NOT( ISBLANK( TEXT(Partner_Status__c ) ) ),
+NOT( ISNULL( TEXT(Partner_Status__c )) ),
+NOT(
+OR(
+ISPICKVAL( Channel__c , &apos;AR&apos;),
+ISPICKVAL( Channel__c , &apos;PAR&apos;),
+ISPICKVAL( Channel__c , &apos;Wholesaler/Distributor&apos;),
+ISPICKVAL( Channel__c , &apos;System Integrator&apos;)
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Partner_Status__c</errorDisplayField>
+    <errorMessage>Partner Status is not required for this value of Channel.</errorMessage>
+</ValidationRule>

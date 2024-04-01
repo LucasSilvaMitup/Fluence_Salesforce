@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rebate_Initiative__c</fullName>
+    <externalId>false</externalId>
+    <label>Rebate Initiative</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>XCEL 2023</fullName>
+                <default>false</default>
+                <label>XCEL 2023</label>
+            </value>
+            <value>
+                <fullName>XCEL Minnesota 2023</fullName>
+                <default>false</default>
+                <label>XCEL Minnesota 2023</label>
+            </value>
+            <value>
+                <fullName>Consumers Energy New-build 2023</fullName>
+                <default>false</default>
+                <label>Consumers Energy New-build 2023</label>
+            </value>
+            <value>
+                <fullName>Ameren 2023</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ameren 2023</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

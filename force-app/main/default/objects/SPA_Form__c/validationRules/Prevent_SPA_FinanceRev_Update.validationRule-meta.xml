@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_SPA_FinanceRev_Update</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED( Spa_Finance_Section_Reviswed__c ),NOT($Setup.Bypass_Configuration__c.SPA_Form_Validation_Rule__c))</errorConditionFormula>
+    <errorDisplayField>Spa_Finance_Section_Reviswed__c</errorDisplayField>
+    <errorMessage>You are not allowed to change &quot;Finance Section Review&quot; field. Please reach out to System Administrator for additional help.</errorMessage>
+</ValidationRule>

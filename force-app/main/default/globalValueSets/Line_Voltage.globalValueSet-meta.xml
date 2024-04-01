@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>120v</fullName>
+        <default>false</default>
+        <label>120v</label>
+    </customValue>
+    <customValue>
+        <fullName>208v</fullName>
+        <default>false</default>
+        <label>208v</label>
+    </customValue>
+    <customValue>
+        <fullName>230v</fullName>
+        <default>false</default>
+        <label>230v</label>
+    </customValue>
+    <customValue>
+        <fullName>240v</fullName>
+        <default>false</default>
+        <label>240v</label>
+    </customValue>
+    <customValue>
+        <fullName>277v</fullName>
+        <default>false</default>
+        <label>277v</label>
+    </customValue>
+    <customValue>
+        <fullName>347v</fullName>
+        <default>false</default>
+        <label>347v</label>
+    </customValue>
+    <customValue>
+        <fullName>400v</fullName>
+        <default>false</default>
+        <label>400v</label>
+    </customValue>
+    <customValue>
+        <fullName>480v</fullName>
+        <default>false</default>
+        <label>480v</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>140 VAC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>140 VAC</label>
+    </customValue>
+    <customValue>
+        <fullName>120 VAC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>120 VAC</label>
+    </customValue>
+    <customValue>
+        <fullName>240 VAC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>240 VAC</label>
+    </customValue>
+    <customValue>
+        <fullName>277 VAC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>277 VAC</label>
+    </customValue>
+    <customValue>
+        <fullName>347 VAC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>347 VAC</label>
+    </customValue>
+    <customValue>
+        <fullName>400 VAC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>400 VAC</label>
+    </customValue>
+    <customValue>
+        <fullName>480 VAC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>480 VAC</label>
+    </customValue>
+    <masterLabel>Line Voltage</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

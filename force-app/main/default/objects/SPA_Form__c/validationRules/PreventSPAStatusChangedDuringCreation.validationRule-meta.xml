@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreventSPAStatusChangedDuringCreation</fullName>
+    <active>true</active>
+    <description>This rule prevent end users to create SPA Form records with Status not equals to Submitted.</description>
+    <errorConditionFormula>AND(
+				ISNEW(),
+				NOT(ISPICKVAL(Status__c, &apos;Submitted&apos;)) 
+				)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>You cannot change the status during the creation of a SPA form.</errorMessage>
+</ValidationRule>

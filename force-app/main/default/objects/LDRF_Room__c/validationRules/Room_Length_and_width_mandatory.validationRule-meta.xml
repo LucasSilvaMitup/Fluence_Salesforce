@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Room_Length_and_width_mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+!$Setup.Bypass_Configuration__c.LDRF_ROOM_Validation_Rule__c,
+OR(
+ISBLANK( Room_Length__c ),
+ISNULL(Room_Length__c),
+ISBLANK( Room_Width__c  ),
+ISNULL(Room_Width__c )),
+ISPICKVAL( Room_Configuration__c ,&apos;Rectangle&apos;))</errorConditionFormula>
+    <errorMessage>Room Length and Room Width are mandatory for Rectangle Room Configuration.</errorMessage>
+</ValidationRule>

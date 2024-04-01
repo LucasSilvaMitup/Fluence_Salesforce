@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Seeking Property</fullName>
+        <default>false</default>
+        <label>Seeking Property</label>
+    </customValue>
+    <customValue>
+        <fullName>Obtaining Permits</fullName>
+        <default>false</default>
+        <label>Obtaining Permits</label>
+    </customValue>
+    <customValue>
+        <fullName>Under Construction</fullName>
+        <default>false</default>
+        <label>Under Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>Completed</fullName>
+        <default>false</default>
+        <label>Completed</label>
+    </customValue>
+    <masterLabel>Construction Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

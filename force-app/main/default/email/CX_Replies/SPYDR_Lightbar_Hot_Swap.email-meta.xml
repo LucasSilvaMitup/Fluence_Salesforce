@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SPYDR Lightbar Hot Swap</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SPYDR Lightbar Hot Swap</name>
+    <style>none</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>Hello {!Case.Contact},
+
+Sorry to hear you&apos;re experiencing issues with one of your lights!
+
+Before we proceed with initiating a warranty claim, I would like to do a little troubleshooting with you to determine exactly what is causing the issue. If you have not already done so, can please try swapping the faulty light bar to a different power lead on your fixture&apos;s central console and let me know if the issue persists?
+
+I look forward to hearing back from you!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

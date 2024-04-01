@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Funded</fullName>
+        <default>false</default>
+        <label>Funded</label>
+    </customValue>
+    <customValue>
+        <fullName>Public</fullName>
+        <default>false</default>
+        <label>Public</label>
+    </customValue>
+    <customValue>
+        <fullName>Needs Capital</fullName>
+        <default>false</default>
+        <label>Needs Capital</label>
+    </customValue>
+    <masterLabel>SPA Finances</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

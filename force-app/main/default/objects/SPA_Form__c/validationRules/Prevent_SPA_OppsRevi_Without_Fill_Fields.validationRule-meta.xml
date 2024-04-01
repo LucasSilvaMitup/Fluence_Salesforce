@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_SPA_OppsRevi_Without_Fill_Fields</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(OR(ISBLANK(Inventory_Consumption__c), ISBLANK(Additional_Inventory_Purchases__c),ISBLANK(Operations_Confirmed_Lead_Time__c),  ISPICKVAL(Quality_Hold__c,&quot;&quot;)), ISCHANGED(Opps_Review_Completed__c), Opps_Review_Completed__c)</errorConditionFormula>
+    <errorDisplayField>Opps_Review_Completed__c</errorDisplayField>
+    <errorMessage>Please, please fill all field from Opps section before update the field &quot;Opps Review Completed&quot;</errorMessage>
+</ValidationRule>

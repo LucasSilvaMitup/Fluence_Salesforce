@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acc_ERP_ID_should_be_there_based_on_Type</fullName>
+    <active>false</active>
+    <description>Account External ERP ID should be filled if Case Type is Warranty Support OR Shipping Error.
+US : SFS-354</description>
+    <errorConditionFormula>AND
+(
+$Setup.Bypass_Configuration__c.Case_Process__c = FALSE,
+RecordType.DeveloperName = &apos;General&apos;,
+OR
+(
+ISPICKVAL( Type , &apos;Warranty Support&apos;) ,
+ISPICKVAL( Type , &apos;Shipping Error&apos;)
+),
+NOT(ISBLANK( AccountId )),
+OR(
+Account.External_ERP_ID_Populated__c = false ),
+ISBLANK( Account.External_ERP_ID__c )
+
+)</errorConditionFormula>
+    <errorMessage>Account External ERP ID should be filled if Case Type is Warranty Support OR Shipping Error.</errorMessage>
+</ValidationRule>

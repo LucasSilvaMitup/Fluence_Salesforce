@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CC Hold Charge</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CC Hold Charge</name>
+    <style>none</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>Please be advised that as we have not received your RMA return items at this time, per our agreement, your credit card has been charged [XXx $amount xXx]. This will appear on your statement within the next 2-3 business days.
+
+If you have already sent back the materials, or the package is currently in transit, please reply to this message with the package’s tracking information and we will be happy to reverse the charge. This can be done for the next 90 days.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

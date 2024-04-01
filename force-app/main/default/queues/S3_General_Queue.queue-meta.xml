@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>S3 General Queue</name>
+    <queueMembers>
+        <users>
+            <user>barbara.neves@biz2people.com</user>
+            <user>circe.lezama@fluencebioengineering.com</user>
+            <user>emily.miller@fluencebioengineering.com</user>
+            <user>ginger.brown@fluencebioengineering.com</user>
+            <user>jacob.brown@fluencebioengineering.com</user>
+            <user>rachel.perine@fluencebioengineering.com</user>
+            <user>spencer.cox@fluencebioengineering.com</user>
+            <user>tricia.manning@fluencebioengineering.com</user>
+            <user>tyler.edmunds@fluencebioengineering.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CS_Queue_Quote_Activity_Notifications_on_Quote</fullName>
+        <description>CS Queue Quote Activity Notifications on Quote</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/CS_Queue_Quote_Activity_Notifications</template>
+    </alerts>
+    <alerts>
+        <fullName>SPM_notification_on_Quote</fullName>
+        <description>SPM notification on Quote</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SPM_notification_on_Quote</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_Quote_Payment_Terms_to_Prepaid</fullName>
+        <field>Payment_Terms__c</field>
+        <literalValue>Prepaid</literalValue>
+        <name>Update Quote Payment Terms to Prepaid</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

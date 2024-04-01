@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Opportunity_Reopening</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Setup.Bypass_Configuration__c.Opportunity_Validation_Rule__c= FALSE,
+!$User.Allowed_to_Re_open_Opportunity__c ,
+ISCHANGED( StageName ),
+OR(ISPICKVAL(PRIORVALUE(StageName) ,&apos;Promoted to Order&apos;),ISPICKVAL(PRIORVALUE( StageName) ,&apos;Closed Lost&apos;)))</errorConditionFormula>
+    <errorMessage>You are not allowed to re-open an Opportunity.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Family__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Family</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>SPYDR 2.0</fullName>
+                <default>false</default>
+                <label>SPYDR 2.0</label>
+            </value>
+            <value>
+                <fullName>Osram Only Part</fullName>
+                <default>false</default>
+                <label>Osram Only Part</label>
+            </value>
+            <value>
+                <fullName>Custom</fullName>
+                <default>false</default>
+                <label>Custom</label>
+            </value>
+            <value>
+                <fullName>VYPR</fullName>
+                <default>false</default>
+                <label>VYPR</label>
+            </value>
+            <value>
+                <fullName>NEW PRODUCT DEV</fullName>
+                <default>false</default>
+                <label>NEW PRODUCT DEV</label>
+            </value>
+            <value>
+                <fullName>Placeholder</fullName>
+                <default>false</default>
+                <label>Placeholder</label>
+            </value>
+            <value>
+                <fullName>NPI</fullName>
+                <default>false</default>
+                <label>NPI</label>
+            </value>
+            <value>
+                <fullName>Accessory</fullName>
+                <default>false</default>
+                <label>Accessory</label>
+            </value>
+            <value>
+                <fullName>CABLES</fullName>
+                <default>false</default>
+                <label>CABLES</label>
+            </value>
+            <value>
+                <fullName>Controls</fullName>
+                <default>false</default>
+                <label>Controls</label>
+            </value>
+            <value>
+                <fullName>CUST</fullName>
+                <default>false</default>
+                <label>CUST</label>
+            </value>
+            <value>
+                <fullName>DIM FLEX</fullName>
+                <default>false</default>
+                <label>DIM FLEX</label>
+            </value>
+            <value>
+                <fullName>FLEX</fullName>
+                <default>false</default>
+                <label>FLEX</label>
+            </value>
+            <value>
+                <fullName>GIP</fullName>
+                <default>false</default>
+                <label>GIP</label>
+            </value>
+            <value>
+                <fullName>LUMINAIRE</fullName>
+                <default>false</default>
+                <label>LUMINAIRE</label>
+            </value>
+            <value>
+                <fullName>MHW</fullName>
+                <default>false</default>
+                <label>MHW</label>
+            </value>
+            <value>
+                <fullName>MULT</fullName>
+                <default>false</default>
+                <label>MULT</label>
+            </value>
+            <value>
+                <fullName>OPTICS</fullName>
+                <default>false</default>
+                <label>OPTICS</label>
+            </value>
+            <value>
+                <fullName>POWERSUPLY</fullName>
+                <default>false</default>
+                <label>POWERSUPLY</label>
+            </value>
+            <value>
+                <fullName>PSE</fullName>
+                <default>false</default>
+                <label>PSE</label>
+            </value>
+            <value>
+                <fullName>PSE2</fullName>
+                <default>false</default>
+                <label>PSE2</label>
+            </value>
+            <value>
+                <fullName>PSU</fullName>
+                <default>false</default>
+                <label>PSU</label>
+            </value>
+            <value>
+                <fullName>PSU2</fullName>
+                <default>false</default>
+                <label>PSU2</label>
+            </value>
+            <value>
+                <fullName>RAW MTL</fullName>
+                <default>false</default>
+                <label>RAW MTL</label>
+            </value>
+            <value>
+                <fullName>RAY</fullName>
+                <default>false</default>
+                <label>RAY</label>
+            </value>
+            <value>
+                <fullName>RAY 1.0</fullName>
+                <default>false</default>
+                <label>RAY 1.0</label>
+            </value>
+            <value>
+                <fullName>RAZR</fullName>
+                <default>false</default>
+                <label>RAZR</label>
+            </value>
+            <value>
+                <fullName>RAZR 1.0</fullName>
+                <default>false</default>
+                <label>RAZR 1.0</label>
+            </value>
+            <value>
+                <fullName>RAZR 2.0</fullName>
+                <default>false</default>
+                <label>RAZR 2.0</label>
+            </value>
+            <value>
+                <fullName>RAZR2/3/4</fullName>
+                <default>false</default>
+                <label>RAZR2/3/4</label>
+            </value>
+            <value>
+                <fullName>RD</fullName>
+                <default>false</default>
+                <label>RD</label>
+            </value>
+            <value>
+                <fullName>SDB Board</fullName>
+                <default>false</default>
+                <label>SDB Board</label>
+            </value>
+            <value>
+                <fullName>SHYFT</fullName>
+                <default>false</default>
+                <label>SHYFT</label>
+            </value>
+            <value>
+                <fullName>SmartFarm</fullName>
+                <default>false</default>
+                <label>SmartFarm</label>
+            </value>
+            <value>
+                <fullName>Solunar</fullName>
+                <default>false</default>
+                <label>Solunar</label>
+            </value>
+            <value>
+                <fullName>SPYDR</fullName>
+                <default>false</default>
+                <label>SPYDR</label>
+            </value>
+            <value>
+                <fullName>SPYDR 1.0</fullName>
+                <default>false</default>
+                <label>SPYDR 1.0</label>
+            </value>
+            <value>
+                <fullName>SPYDR 3.0</fullName>
+                <default>false</default>
+                <label>SPYDR 3.0</label>
+            </value>
+            <value>
+                <fullName>STINGRAY</fullName>
+                <default>false</default>
+                <label>STINGRAY</label>
+            </value>
+            <value>
+                <fullName>VYNE</fullName>
+                <default>false</default>
+                <label>VYNE</label>
+            </value>
+            <value>
+                <fullName>VYNE 1.0</fullName>
+                <default>false</default>
+                <label>VYNE 1.0</label>
+            </value>
+            <value>
+                <fullName>VYNE 2.0</fullName>
+                <default>false</default>
+                <label>VYNE 2.0</label>
+            </value>
+            <value>
+                <fullName>VYPR 1.0</fullName>
+                <default>false</default>
+                <label>VYPR 1.0</label>
+            </value>
+            <value>
+                <fullName>VYPR 2.0</fullName>
+                <default>false</default>
+                <label>VYPR 2.0</label>
+            </value>
+            <value>
+                <fullName>VYPR 3.0</fullName>
+                <default>false</default>
+                <label>VYPR 3.0</label>
+            </value>
+            <value>
+                <fullName>VYPR 4.0</fullName>
+                <default>false</default>
+                <label>VYPR 4.0</label>
+            </value>
+            <value>
+                <fullName>Whisper</fullName>
+                <default>false</default>
+                <label>Whisper</label>
+            </value>
+            <value>
+                <fullName>Whisper 2</fullName>
+                <default>false</default>
+                <label>Whisper 2</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

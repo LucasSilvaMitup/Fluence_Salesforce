@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_Contact_Validation</fullName>
+    <active>true</active>
+    <description>Every Lead must have either an email, a phone or a mobile phone.</description>
+    <errorConditionFormula>AND(
+$Setup.Bypass_Configuration__c.Lead_Validation_Rule__c	= FALSE,
+ISBLANK(Email),
+ISBLANK(Phone),
+ISBLANK(MobilePhone)
+)</errorConditionFormula>
+    <errorDisplayField>Email</errorDisplayField>
+    <errorMessage>Every Lead must have an email address</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>COMPLETE_ROOM_FORMS_BEFORE_SUBMIT</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &apos;LDRF&apos;,
+ Submit_case__c = TRUE,
+ Total_of_Rooms__c &lt;  No_of_Room_Types__c,
+$Setup.Bypass_Configuration__c.Case_Validation_Rule__c	= FALSE 
+)</errorConditionFormula>
+    <errorDisplayField>No_of_Room_Types__c</errorDisplayField>
+    <errorMessage>Cannot Submit LDRF if value of No. of Room Types is greater than Total # of Rooms.</errorMessage>
+</ValidationRule>

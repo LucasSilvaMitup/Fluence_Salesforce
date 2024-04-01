@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Customer Entry Error</fullName>
+        <default>false</default>
+        <label>Customer Entry Error</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Entry Error</fullName>
+        <default>false</default>
+        <label>Sales Entry Error</label>
+    </customValue>
+    <customValue>
+        <fullName>S3 Entry Error</fullName>
+        <default>false</default>
+        <label>S3 Entry Error</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Eng Issue</fullName>
+        <default>false</default>
+        <label>Product Eng Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>Lighting Design Error</fullName>
+        <default>false</default>
+        <label>Lighting Design Error</label>
+    </customValue>
+    <masterLabel>Entry Error Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Case Assignment Rules</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>christopher.bezuyen@fluencebioengineering.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(ISCHANGED(Status),ISPICKVAL(Status,&quot;Resolved&quot;), RecordType.Name = &quot;Technical Support&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewcaseassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>S3_Direct_Com_Ag_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISNEW() ,  RecordType.DeveloperName =&apos;General&apos;,  NOT(Is_Tech_Support_Needed__c ),  OR  (     AND(  	    ISPICKVAL( Origin , &apos;Email To Case&apos;),    OR(Contact.Email=&apos;tyler.sandison@fluencebioengineering.com&apos;,            Contact.Email=&apos;ashley.veach@fluencebioengineering.com&apos;, 	       Contact.Email=&apos;michael.hanan@fluencebioengineering.com&apos;, 	       Contact.Email=&apos;b.susko@fluencebioengineering.com&apos;)      ), 	AND(   	    OR( 		   ISPICKVAL(  Contact.Account.Market__c  , &apos;Produce&apos;), 		   ISPICKVAL(  Contact.Account.Market__c  , &apos;Ornamental&apos;) 		), 		ISPICKVAL(   Contact.Account.Channel__c   , &apos;Direct&apos;), 		OR( 		   ISPICKVAL(   Contact.Account.Region__c   , &apos;Americas-NA&apos;), 		   ISPICKVAL(   Contact.Account.Region__c   , &apos;Americas-LATAM&apos;) 		)     )  )  )</formula>
+            <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>S3_Cannabis_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISNEW() ,  RecordType.DeveloperName =&apos;General&apos;,  NOT(Is_Tech_Support_Needed__c ),  OR  (     AND(  	    ISPICKVAL( Origin , &apos;Email To Case&apos;),    OR(Contact.Email=&apos;andrew.mahr@fluencebioengineering.com&apos;,            Contact.Email=&apos;adam.edwards@fluencebioengineering.com&apos;, 	       Contact.Email=&apos;logan.patterson@fluencebioengineering.com&apos;, 	       Contact.Email=&apos;tim.kiefer@fluencebioengineering.com&apos;, 		   Contact.Email=&apos;aaron.fellabaum@fluencebioengineering.com&apos;,            Contact.Email=&apos;alex.randolph@fluencebioengineering.com&apos;, 	       Contact.Email=&apos;ryley.leech@fluencebioengineering.com&apos;, 	       Contact.Email=&apos;casey.rivero@fluencebioengineering.com&apos;)      ), 	AND(   		ISPICKVAL(  Contact.Account.Market__c  , &apos;Cannabis&apos;), 		ISPICKVAL(  Contact.Account.Channel__c   , &apos;Direct&apos;), 		OR( 		   ISPICKVAL(   Contact.Account.Region__c   , &apos;Americas-NA&apos;), 		   ISPICKVAL(   Contact.Account.Region__c   , &apos;Americas-LATAM&apos;) 		)     )  )  )</formula>
+            <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>S3_Retail_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISNEW() ,  RecordType.DeveloperName =&apos;General&apos;,  NOT(Is_Tech_Support_Needed__c ),  OR  (     AND(  	    ISPICKVAL( Origin , &apos;Email To Case&apos;),    OR(Contact.Email=&apos;michael.lucchino@fluencebioengineering.com&apos;,            Contact.Email=&apos;emily.miller@fluencebioengineering.com&apos;, 	       Contact.Email=&apos;marc.miller@fluencebioengineering.com&apos;, 	       Contact.Email=&apos;finn.decaulp@fluencebioengineering.com&apos;, 		   Contact.Email=&apos;eric.fowler@fluencebioengineering.com&apos;)      ), 	AND(   	    OR( 		   ISPICKVAL(   Contact.Account.Channel__c    , &apos;AR&apos;), 		   ISPICKVAL(   Contact.Account.Channel__c    , &apos;PAR&apos;) 		), 		OR( 		   ISPICKVAL(   Contact.Account.Region__c   , &apos;Americas-NA&apos;), 		   ISPICKVAL(   Contact.Account.Region__c   , &apos;Americas-LATAM&apos;) 		)     )  )  )</formula>
+            <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>S3_EMEA_APAC_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISNEW() ,  RecordType.DeveloperName =&apos;General&apos;,  NOT(Is_Tech_Support_Needed__c ),  OR  (     AND(  	    ISPICKVAL( Origin , &apos;Email To Case&apos;),     		ISPICKVAL(   Contact.Account.Region__c   , &apos;EMEA&apos;)      ), 	OR( 		ISPICKVAL(   Contact.Account.Region__c   , &apos;APAC&apos;), 		ISPICKVAL(   Contact.Account.Region__c   , &apos;EMEA&apos;) 	)  )  )</formula>
+            <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>S3_General_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISNEW() ,  RecordType.DeveloperName =&apos;General&apos;,  NOT(Is_Tech_Support_Needed__c ),  OR  (     ISPICKVAL( Origin , &apos;Email To Case&apos;),     	ISPICKVAL(   Contact.Account.Channel__c   , &apos;Ecomm&apos;)    )  )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RARF_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>RARF</value>
+            </criteriaItems>
+            <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LDRF_Americas_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( RecordType.Name =&apos;LDRF&apos; ,Submit_case__c,ISCHANGED(Submit_case__c),!ISPICKVAL( Status, &apos;FAE Review&apos;),OR(ISPICKVAL( Opportunity__r.Region__c, &apos;Americas-NA&apos;), ISPICKVAL( Opportunity__r.Region__c, &apos;Americas-LATAM&apos;), ISPICKVAL( Opportunity__r.Region__c, &apos;APAC&apos;)   ))</formula>
+            <template>unfiled$public/LDRF_New_assignment_notification_SAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LDRF_EMEA_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( RecordType.Name =&apos;LDRF&apos; ,Submit_case__c,ISCHANGED(Submit_case__c),!ISPICKVAL( Status, &apos;FAE Review&apos;),RecordType.Name = &apos;LDRF&apos;, ISPICKVAL( Opportunity__r.Region__c, &apos;EMEA&apos;))</formula>
+            <template>unfiled$public/LDRF_New_assignment_notification_SAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FAE_Cannabis_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( OR(ISPICKVAL(Account.Region__c , &apos;Americas-NA&apos;), ISPICKVAL( Account.Region__c, &apos;Americas-LATAM&apos;)), ISPICKVAL( Account.Market__c , &apos;Cannabis&apos;), ISPICKVAL( Account.Channel__c , &apos;Direct&apos;), ISBLANK(SuppliedEmail), OR( AND(OR(RecordType.Name = &apos;General&apos;, RecordType.Name = &apos;RMA&apos;), Is_Tech_Support_Needed__c, OR(ISNEW(),ISCHANGED( Is_Tech_Support_Needed__c ))), AND(RecordType.Name = &apos;LDRF&apos;, ISPICKVAL(Status,&apos;FAE Review&apos;), ISCHANGED(Submit_case__c), Submit_case__c)))</formula>
+            <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FAE_Comm_Ag_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( OR(ISPICKVAL( Account.Region__c, &apos;Americas-NA&apos;), ISPICKVAL( Account.Region__c, &apos;Americas-LATAM&apos;)), OR(ISPICKVAL( Account.Market__c , &apos;Ornamental&apos;), ISPICKVAL( Account.Market__c , &apos;Produce&apos;), ISPICKVAL( Account.Market__c , &apos;Research&apos;)), ISBLANK(SuppliedEmail ),OR (ISPICKVAL( Account.Channel__c, &apos;Direct&apos;), ISPICKVAL( Account.Channel__c, &apos;Research&apos;)), OR( AND(OR(RecordType.Name = &apos;General&apos;, RecordType.Name = &apos;RMA&apos;), Is_Tech_Support_Needed__c = true, OR(ISNEW(),ISCHANGED( Is_Tech_Support_Needed__c ))), AND(RecordType.Name = &apos;LDRF&apos;, ISPICKVAL(Status,&apos;FAE Review&apos;), ISCHANGED(Submit_case__c), Submit_case__c)))</formula>
+            <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FAE_AR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( OR(ISPICKVAL( Account.Region__c, &apos;Americas-NA&apos;), ISPICKVAL( Account.Region__c, &apos;Americas-LATAM&apos;)), OR(ISPICKVAL( Account.Channel__c, &apos;AR&apos;), ISPICKVAL( Account.Channel__c, &apos;PAR&apos;)), ISBLANK(SuppliedEmail ), OR( AND(OR(RecordType.Name = &apos;General&apos;, RecordType.Name = &apos;RMA&apos;), Is_Tech_Support_Needed__c, OR(ISNEW(),ISCHANGED( Is_Tech_Support_Needed__c ))), AND(RecordType.Name = &apos;LDRF&apos;, ISPICKVAL(Status,&apos;FAE Review&apos;), ISCHANGED(Submit_case__c), Submit_case__c)))</formula>
+            <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FAE_EMEA_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISPICKVAL( Account.Region__c, &apos;EMEA&apos;), ISBLANK(SuppliedEmail ), OR( AND(OR(RecordType.Name = &apos;General&apos;, RecordType.Name = &apos;RMA&apos;), Is_Tech_Support_Needed__c, OR(ISNEW(),ISCHANGED( Is_Tech_Support_Needed__c ))), AND(RecordType.Name = &apos;LDRF&apos;, ISPICKVAL(Status,&apos;FAE Review&apos;), ISCHANGED(Submit_case__c), Submit_case__c),AND(RecordType.Name = &apos;Commissioning&apos;)))</formula>
+            <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FAE_APAC_Australia_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( OR(AND(OR(RecordType.Name = &apos;General&apos;, RecordType.Name = &apos;RMA&apos;), Is_Tech_Support_Needed__c, OR(ISNEW(),ISCHANGED( Is_Tech_Support_Needed__c))), AND(RecordType.Name = &apos;LDRF&apos;, ISPICKVAL(Status,&apos;FAE Review&apos;), ISCHANGED(Submit_case__c), Submit_case__c)), ISPICKVAL( Account.Region__c, &apos;APAC&apos;), Account.BillingCountry = &apos;Australia&apos;, ISBLANK(SuppliedEmail ) )</formula>
+            <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FAE_APAC_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISPICKVAL( Account.Region__c , &apos;APAC&apos;), ISBLANK(SuppliedEmail ), OR(Account.BillingCountry=&apos;Russia&apos;,Account.BillingCountry=&apos;China&apos;,Account.BillingCountry=&apos;India&apos;,Account.BillingCountry=&apos;Kazakhstan&apos;,Account.BillingCountry=&apos;Saudi Arabia&apos;,Account.BillingCountry=&apos;Iran&apos;,Account.BillingCountry=&apos;Mongolia&apos;,Account.BillingCountry=&apos;Indonesia&apos;,Account.BillingCountry=&apos;Pakistan&apos;,Account.BillingCountry=&apos;Turkey&apos;,Account.BillingCountry=&apos;Myanmar&apos;,Account.BillingCountry=&apos;Afghanistan&apos;,Account.BillingCountry=&apos;Yemen&apos;,Account.BillingCountry=&apos;Thailand&apos;,Account.BillingCountry=&apos;Turkmenistan&apos;,Account.BillingCountry=&apos;Uzbekistan&apos;,Account.BillingCountry=&apos;Iraq&apos;,Account.BillingCountry=&apos;Japan&apos;,Account.BillingCountry=&apos;Vietnam&apos;,Account.BillingCountry=&apos;Malaysia&apos;,Account.BillingCountry=&apos;Oman&apos;,Account.BillingCountry=&apos;Philippines&apos;,Account.BillingCountry=&apos;Laos&apos;,Account.BillingCountry=&apos;Kyrgyzstan&apos;,Account.BillingCountry=&apos;Syria&apos;,Account.BillingCountry=&apos;Cambodia&apos;,Account.BillingCountry=&apos;Bangladesh&apos;,Account.BillingCountry=&apos;Nepal&apos;,Account.BillingCountry=&apos;Tajikistan&apos;,Account.BillingCountry=&apos;North Korea&apos;,Account.BillingCountry=&apos;South Korea&apos;,Account.BillingCountry=&apos;Jordan&apos;,Account.BillingCountry=&apos;United Arab Emirates&apos;,Account.BillingCountry =&apos;Azerbaijan&apos;,Account.BillingCountry=&apos;Georgia&apos;,Account.BillingCountry=&apos;Sri Lanka&apos;,Account.BillingCountry=&apos;Bhutan&apos;,Account.BillingCountry=&apos;Taiwan&apos;, Account.BillingCountry=&apos;Armenia&apos;,Account.BillingCountry=&apos;Kuwait&apos;, Account.BillingCountry=&apos;Timor-Leste&apos;,Account.BillingCountry=&apos;Qatar&apos;,Account.BillingCountry=&apos;Lebanon&apos;,Account.BillingCountry=&apos;Cyprus&apos;,Account.BillingCountry=&apos;Brunei&apos;,Account.BillingCountry=&apos;Bahrain&apos;,Account.BillingCountry=&apos;Singapore&apos;,Account.BillingCountry=&apos;Maldives&apos;,Account.BillingCountry=&apos;Papua New Guinea&apos;,Account.BillingCountry=&apos;Fiji&apos;,Account.BillingCountry=&apos;Solomon Islands&apos;,Account.BillingCountry=&apos;Vanuatu&apos;,Account.BillingCountry=&apos;New Caledonia&apos;,Account.BillingCountry=&apos;French Polynesia&apos;,Account.BillingCountry=&apos;Samoa&apos;,Account.BillingCountry=&apos;Guam&apos;,Account.BillingCountry=&apos;Kiribati&apos;,Account.BillingCountry=&apos;Tonga&apos;,Account.BillingCountry=&apos;American Samoa&apos;,Account.BillingCountry=&apos;Palau&apos;,Account.BillingCountry=&apos;Cook Islands&apos;,Account.BillingCountry=&apos;Wallis and Futuna&apos;,Account.BillingCountry=&apos;Tuvalu&apos;,Account.BillingCountry=&apos;Nauru&apos;,Account.BillingCountry=&apos;Norfolk Islands&apos;,Account.BillingCountry=&apos;Niue&apos;,Account.BillingCountry=&apos;Tokelau&apos;,Account.BillingCountry=&apos;Pitcairn&apos;), OR( AND(OR(RecordType.Name = &apos;General&apos;, RecordType.Name = &apos;RMA&apos;), Is_Tech_Support_Needed__c, OR(ISNEW(),ISCHANGED( Is_Tech_Support_Needed__c ))), AND(RecordType.Name = &apos;LDRF&apos;, ISPICKVAL(Status,&apos;FAE Review&apos;), ISCHANGED(Submit_case__c), Submit_case__c)))</formula>
+            <template>HTML/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>AND( RecordType.DeveloperName =&apos;General&apos;, NOT(ISNEW()))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FAE_Cannabis_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( OR(ISPICKVAL(Account.Region__c , &apos;Americas-NA&apos;), ISPICKVAL( Account.Region__c, &apos;Americas-LATAM&apos;)), ISPICKVAL( Account.Market__c , &apos;Cannabis&apos;), ISPICKVAL( Account.Channel__c , &apos;Direct&apos;), OR(RecordType.Name = &apos;Commissioning&apos;,RecordType.Name =&apos;Technical Support&apos;) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FAE_Comm_Ag_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( OR(ISPICKVAL( Account.Region__c, &apos;Americas-NA&apos;), ISPICKVAL( Account.Region__c, &apos;Americas-LATAM&apos;)), OR(ISPICKVAL( Account.Market__c , &apos;Ornamental&apos;), ISPICKVAL( Account.Market__c , &apos;Produce&apos;), ISPICKVAL( Account.Market__c , &apos;Research&apos;)), ISPICKVAL( Account.Channel__c, &apos;Direct&apos;),OR(RecordType.Name = &apos;Commissioning&apos;,RecordType.Name =&apos;Technical Support&apos;))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FAE_AR_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( OR(ISPICKVAL( Account.Region__c, &apos;Americas-NA&apos;), ISPICKVAL( Account.Region__c, &apos;Americas-LATAM&apos;)), OR(ISPICKVAL( Account.Channel__c, &apos;AR&apos;), ISPICKVAL( Account.Channel__c, &apos;PAR&apos;)), OR(RecordType.Name = &apos;Commissioning&apos;,RecordType.Name =&apos;Technical Support&apos;))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FAE_APAC_Australia_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISPICKVAL( Account.Region__c , &apos;APAC&apos;),OR(RecordType.Name = &apos;Commissioning&apos;,RecordType.Name =&apos;Technical Support&apos;),  Account.BillingCountry = &apos;Australia&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FAE_APAC_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISPICKVAL( Account.Region__c , &apos;APAC&apos;),OR(RecordType.Name = &apos;Commissioning&apos;,RecordType.Name =&apos;Technical Support&apos;),  Account.BillingCountry &lt;&gt; &apos;Australia&apos;)</formula>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

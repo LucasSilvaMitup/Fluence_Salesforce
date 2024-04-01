@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>RMA More information Needed</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>RMA More information Needed</name>
+    <style>none</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>Hello {!Case.Contact},
+
+Thank you for contacting us. My name is Xxx_Name_xxX, with the Fluence Customer Experience team. I&apos;m sorry to hear you are experiencing issues with your light! In order to best assist you with your warranty claim, please provide me with a brief description of the issue and as much of the following information as possible.
+
+•	Name
+•	Address
+•	Order Number (if possible)
+•	Serial Number of affected light(s)
+•	Number of affected lights
+
+If you are having difficulty locating the serial number on your fixture, it can be located on either the power supply or the fixture itself. Once we have the information needed I will be able to process your warranty claim. If you have any additional questions please don&apos;t hesitate to ask!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

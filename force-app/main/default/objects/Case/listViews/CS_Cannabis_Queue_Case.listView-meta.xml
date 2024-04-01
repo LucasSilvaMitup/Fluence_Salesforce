@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Cannabis_Queue_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>S3 Cannabis Queue</label>
+    <queue>S3_Cannabis_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_LDRF_Case_FAEReviewRe</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Status,&quot;Fae Review&quot;), ISCHANGED(Description_of_Changes_Requested__c),!ISBLANK(Description_of_Changes_Requested__c),!Is_FAE_Review_rejected__c)</errorConditionFormula>
+    <errorDisplayField>Is_FAE_Review_rejected__c</errorDisplayField>
+    <errorMessage>Please select one of the FAE review checkboxes</errorMessage>
+</ValidationRule>

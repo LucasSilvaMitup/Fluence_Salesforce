@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Agnetix</fullName>
+        <default>false</default>
+        <label>Agnetix</label>
+    </customValue>
+    <customValue>
+        <fullName>Bios</fullName>
+        <default>false</default>
+        <label>Bios</label>
+    </customValue>
+    <customValue>
+        <fullName>DLI (Dutch Lighting Innovations)</fullName>
+        <default>false</default>
+        <label>DLI (Dutch Lighting Innovations)</label>
+    </customValue>
+    <customValue>
+        <fullName>eFinity</fullName>
+        <default>false</default>
+        <label>eFinity</label>
+    </customValue>
+    <customValue>
+        <fullName>Fohse</fullName>
+        <default>false</default>
+        <label>Fohse</label>
+    </customValue>
+    <customValue>
+        <fullName>Gavita</fullName>
+        <default>false</default>
+        <label>Gavita</label>
+    </customValue>
+    <customValue>
+        <fullName>GE</fullName>
+        <default>false</default>
+        <label>Current</label>
+    </customValue>
+    <customValue>
+        <fullName>Heliospectra</fullName>
+        <default>false</default>
+        <label>Heliospectra</label>
+    </customValue>
+    <customValue>
+        <fullName>Hortilux</fullName>
+        <default>false</default>
+        <label>Hortilux Schreder</label>
+    </customValue>
+    <customValue>
+        <fullName>HPS</fullName>
+        <default>false</default>
+        <label>HPS</label>
+    </customValue>
+    <customValue>
+        <fullName>Mechatronix</fullName>
+        <default>false</default>
+        <label>Mechatronix</label>
+    </customValue>
+    <customValue>
+        <fullName>Megaphoton</fullName>
+        <default>false</default>
+        <label>Megaphoton</label>
+    </customValue>
+    <customValue>
+        <fullName>Misc LED</fullName>
+        <default>false</default>
+        <label>Misc LED</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Oreon</fullName>
+        <default>false</default>
+        <label>Oreon</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Legacy (Flourescent, CMH, etc.)</fullName>
+        <default>false</default>
+        <label>Other Legacy (Flourescent, CMH, etc.)</label>
+    </customValue>
+    <customValue>
+        <fullName>PhotoBio</fullName>
+        <default>false</default>
+        <label>PhotoBio</label>
+    </customValue>
+    <customValue>
+        <fullName>Sananbio</fullName>
+        <default>false</default>
+        <label>Sananbio</label>
+    </customValue>
+    <customValue>
+        <fullName>Signify</fullName>
+        <default>false</default>
+        <label>Philips Horticulture</label>
+    </customValue>
+    <customValue>
+        <fullName>Sollum</fullName>
+        <default>false</default>
+        <label>Sollum</label>
+    </customValue>
+    <customValue>
+        <fullName>SpecGrade</fullName>
+        <default>false</default>
+        <label>SpecGrade</label>
+    </customValue>
+    <customValue>
+        <fullName>Thrive Agritech</fullName>
+        <default>false</default>
+        <label>Thrive Agritech</label>
+    </customValue>
+    <customValue>
+        <fullName>TSR Grow</fullName>
+        <default>false</default>
+        <label>TSR Grow</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>Valoya</fullName>
+        <default>false</default>
+        <label>Valoya</label>
+    </customValue>
+    <customValue>
+        <fullName>Agrolux</fullName>
+        <default>false</default>
+        <label>Agrolux</label>
+    </customValue>
+    <customValue>
+        <fullName>AB Light</fullName>
+        <default>false</default>
+        <label>AB Light</label>
+    </customValue>
+    <customValue>
+        <fullName>RED Horticulture</fullName>
+        <default>false</default>
+        <label>RED Horticulture</label>
+    </customValue>
+    <customValue>
+        <fullName>California Lightworks</fullName>
+        <default>false</default>
+        <label>California Lightworks</label>
+    </customValue>
+    <customValue>
+        <fullName>Spectrum King</fullName>
+        <default>false</default>
+        <label>Spectrum King</label>
+    </customValue>
+    <customValue>
+        <fullName>Nanolux</fullName>
+        <default>false</default>
+        <label>Nanolux</label>
+    </customValue>
+    <customValue>
+        <fullName>C-Led</fullName>
+        <default>false</default>
+        <label>C-Led</label>
+    </customValue>
+    <customValue>
+        <fullName>Plantalux</fullName>
+        <default>false</default>
+        <label>Plantalux</label>
+    </customValue>
+    <customValue>
+        <fullName>Sun System</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sun System</label>
+    </customValue>
+    <customValue>
+        <fullName>Agentix</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Agentix</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Legacy (Floursescent, CMH, etc)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other Legacy (Floursescent, CMH, etc)</label>
+    </customValue>
+    <customValue>
+        <fullName>Progrow Tech</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Progrow Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Luxx</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Luxx</label>
+    </customValue>
+    <customValue>
+        <fullName>Lumigrow</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lumigrow</label>
+    </customValue>
+    <masterLabel>Competitor</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

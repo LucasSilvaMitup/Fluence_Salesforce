@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_users_to_Modify_on_Closed_Opp</fullName>
+    <active>false</active>
+    <description>Prevent users to Modify on Closed Opp</description>
+    <errorConditionFormula>AND(
+$Setup.Bypass_Configuration__c.Opportunity_Validation_Rule__c= FALSE,
+NOT(ISNEW()),
+OR(ISPICKVAL(PRIORVALUE(StageName),&quot;Received PO&quot;),
+ISPICKVAL(PRIORVALUE(StageName),&quot;Closed Lost&quot;)),
+$Profile.Name !=&apos;System Administrator&apos;
+)</errorConditionFormula>
+    <errorMessage>Changes to Closed Opportunities is not allowed. Please reach out to System Administrator for additional help.</errorMessage>
+</ValidationRule>

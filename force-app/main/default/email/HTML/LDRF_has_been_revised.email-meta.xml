@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>when LDRF form status moved to ‘In Progress’ – AND- Opportunity is in Verbal Commitment stage</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>LDRF has been revised</name>
+    <style>none</style>
+    <subject>LDRF has been submitted.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

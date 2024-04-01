@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Indoor Agriculture</fullName>
+        <default>false</default>
+        <label>Indoor Agriculture</label>
+    </customValue>
+    <customValue>
+        <fullName>Vertical Farming</fullName>
+        <default>false</default>
+        <label>Vertical Farming</label>
+    </customValue>
+    <customValue>
+        <fullName>Greenhouse</fullName>
+        <default>false</default>
+        <label>Greenhouse</label>
+    </customValue>
+    <customValue>
+        <fullName>Other (see project description)</fullName>
+        <default>false</default>
+        <label>Other (see project description)</label>
+    </customValue>
+    <masterLabel>Grow Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

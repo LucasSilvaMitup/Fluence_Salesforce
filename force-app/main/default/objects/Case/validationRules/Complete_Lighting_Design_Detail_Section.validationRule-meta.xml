@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Complete_Lighting_Design_Detail_Section</fullName>
+    <active>true</active>
+    <description>Rule to complete the Lighting Design Detail section to advance to In progress or further statuses.</description>
+    <errorConditionFormula>AND (  OR(ISPICKVAL( Photometric_Design__c , &quot;&quot;) ,  
+       ISPICKVAL( Project_Fixture_Quantity__c, &quot;&quot; ),  
+       ISBLANK( Spectrum__c ) ,  
+       ISPICKVAL( Flex_Design__c, &quot;&quot; ) ,  
+       ISBLANK( Fixtures_used_in_design__c),
+       ISPICKVAL( DesignRevision__c, &quot;&quot; )) ,
+       RecordType.Name = &apos;LDRF&apos;,
+       ISCHANGED(Status), 
+       OR( ISPICKVAL ( Status, &quot;FAE Review&quot;),
+           ISPICKVAL ( Status, &quot;Complete&quot;),
+           ISPICKVAL ( Status, &quot;Closed&quot;)
+          ),
+					  NOT(Opportunity__r.IsClosed)  
+    )</errorConditionFormula>
+    <errorMessage>Please complete all fields in the Lighting Design Details section.</errorMessage>
+</ValidationRule>

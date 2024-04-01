@@ -1,0 +1,38 @@
+<!--
+@Author: Vartika Rai
+@Company: HCL Technologies
+@Component: Submit LDRF component for Quick Action on Case
+@Comments: 
+@Created Date: 10/20/2021
+@Version: 0.0
+
+Modification Log:
+==========================================================================================
+@Version		@Author			@Date			@Reason 
+==========================================================================================
+ -->
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,flexipage:availableForAllPageTypes,lightning:isUrlAddressable" controller="submitLDRFController" >
+	<!--center><b>LDRF is being submitted..........</b></center-->
+    <lightning:spinner variant="brand" class="slds-show backgroundSpinner" size="medium" />
+
+<aura:html tag="style">
+    .slds-backdrop {
+        background: rgba(43, 40, 38, 0) !important;
+    }
+    .backgroundSpinner{
+        background: rgba(0, 0, 0, 0) !important;
+    }
+    .modal-body {
+        background: rgba(0, 0, 0, 0) !important;
+        box-shadow: none !important;
+    }
+    .closeIcon {
+        display:none !important;
+    }
+    .desktop {
+        overflow: visible !important;
+    }
+</aura:html>
+    <aura:handler name="init" value="{!this}" action="{!c.submitLDRF}"/>   
+    <aura:attribute name="recordId" type="String" />
+</aura:component>

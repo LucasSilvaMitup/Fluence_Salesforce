@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Applied_Product_Discount_Price__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+				Quantity &lt;  Applied_Product_Discount__r.First_Range__c, 
+				Applied_Product_Discount__r.First_Range_Value__c,
+				IF(
+								Quantity &lt;  Applied_Product_Discount__r.Second_Range__c,
+								Applied_Product_Discount__r.Second_Range_Value__c,
+								IF(
+												Quantity &lt;  Applied_Product_Discount__r.Third_Range__c,
+												Applied_Product_Discount__r.Third_Range_Value__c,
+												IF(
+																Quantity &lt;  Applied_Product_Discount__r.Fourth_Range__c,
+																Applied_Product_Discount__r.Fourth_Range_Value__c,
+																IF(
+																				Quantity &lt;  Applied_Product_Discount__r.Fifth_Range__c,
+																				Applied_Product_Discount__r.Fifth_Range_Value__c,
+																				Applied_Product_Discount__r.Sixth_Range_Value__c
+																)
+												)
+								)	
+				)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Applied Product Discount Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

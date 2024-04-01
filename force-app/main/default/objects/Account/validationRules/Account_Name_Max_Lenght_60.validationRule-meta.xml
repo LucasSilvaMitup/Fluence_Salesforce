@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Name_Max_Lenght_60</fullName>
+    <active>true</active>
+    <errorConditionFormula>LEN( Name ) &gt; 60</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>The maximum length of the Account Name field must be 60 characters</errorMessage>
+</ValidationRule>

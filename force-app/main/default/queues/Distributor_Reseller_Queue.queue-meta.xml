@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Distributor/Reseller Queue</name>
+    <queueMembers>
+        <users>
+            <user>emily.miller@fluencebioengineering.com</user>
+            <user>eric.fowler@fluencebioengineering.com</user>
+            <user>finn.decaulp@fluencebioengineering.com</user>
+            <user>marc.miller@signify.com</user>
+            <user>michael.lucchino@fluencebioengineering.com</user>
+            <user>rebecca.cole@fluencebioengineering.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

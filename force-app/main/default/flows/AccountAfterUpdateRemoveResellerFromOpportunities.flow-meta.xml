@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <assignments>
+        <description>This assignment will add the opportunity id value in list variable.</description>
+        <name>AddOpportunityIdList</name>
+        <label>Add Opportunity Id in List</label>
+        <locationX>138</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>oppIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>IterateOpportunities.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IterateOpportunities</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>This decision checks if opportunities were found in previous query.</description>
+        <name>OpportunitiesFound</name>
+        <label>Opportunities Found ?</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetOpenOpportunities</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IterateOpportunities</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>This flow is used to remove reseller value in Reseller field for opportunities related to accounts that had record type changed.</description>
+    <environments>Default</environments>
+    <interviewLabel>Account - After Update - Remove Reseller from Opportunities {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account - After Update - Remove Reseller from Opportunities</label>
+    <loops>
+        <description>This loop will iterate each opportunity to execute assignment action.</description>
+        <name>IterateOpportunities</name>
+        <label>Iterate Opportunities</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <collectionReference>GetOpenOpportunities</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>AddOpportunityIdList</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>UpdateOpportunities</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>This action will search for open opportunities related to the triggered account.</description>
+        <name>GetOpenOpportunities</name>
+        <label>Get Open Opportunities</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>OpportunitiesFound</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsClosed</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Reseller__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Reseller__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>This action will update the opportunities iterated in previous loop action.</description>
+        <name>UpdateOpportunities</name>
+        <label>Update Opportunities</label>
+        <locationX>50</locationX>
+        <locationY>839</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>oppIds</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Reseller__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetOpenOpportunities</targetReference>
+        </connector>
+        <filterFormula>AND(
+{!$Record__Prior.RecordType.DeveloperName} == {!$Label.AccountResellerRTDevName},
+ISCHANGED({!$Record.RecordTypeId})
+)</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores opportunity id.</description>
+        <name>oppIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

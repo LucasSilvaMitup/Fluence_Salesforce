@@ -1,0 +1,5 @@
+<apex:page >
+    <div style="text-align:center;font-size: 20px;">
+        <apex:outputText value="In order to proceed filling this RARF form, please fill LDRF form first on Opportunity level." style="color:red" /> 
+    </div>
+</apex:page>

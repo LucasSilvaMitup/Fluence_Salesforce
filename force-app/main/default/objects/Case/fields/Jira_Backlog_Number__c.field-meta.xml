@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Jira_Backlog_Number__c</fullName>
+    <description>Connects bug to Jira Story</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Should start SF-xxx</inlineHelpText>
+    <label>Jira Backlog Number</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

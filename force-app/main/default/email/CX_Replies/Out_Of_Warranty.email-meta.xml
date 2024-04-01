@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Out Of Warranty</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Out Of Warranty</name>
+    <style>none</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>Hello {!Case.Contact},
+
+Thank you for your email. I have reviewed your order history, and unfortunately the order tied to your faulty light, dated Xxx_Order Date_xxX, has surpassed our Xxx_3 year/5 year_xxX warranty period. Additionally, as we have a very limited supply of our legacy stock on hand, we are no longer able to offer any of these parts for sale. The best recommendation I can make at this time is to contact an electronic repair shop in your area for a consultation.
+
+Sorry I couldn’t be of any further assistance. Let me know if you have any additional questions or concerns!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

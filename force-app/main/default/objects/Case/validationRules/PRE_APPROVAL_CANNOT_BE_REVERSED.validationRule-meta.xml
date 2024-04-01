@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRE_APPROVAL_CANNOT_BE_REVERSED</fullName>
+    <active>true</active>
+    <description>PRE_APPROVAL_CANNOT_BE_REVERSED</description>
+    <errorConditionFormula>AND( PRIORVALUE( Pre_approval_obtained__c )=true,
+  ISCHANGED(Pre_approval_obtained__c  ),
+ RecordType.DeveloperName =&apos;RARF&apos; ,
+$Setup.Bypass_Configuration__c.Case_Validation_Rule__c	= FALSE
+)</errorConditionFormula>
+    <errorDisplayField>Pre_approval_obtained__c</errorDisplayField>
+    <errorMessage>Pre-approval obtained flag cannot be modified.</errorMessage>
+</ValidationRule>

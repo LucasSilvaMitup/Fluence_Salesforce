@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRE_APPROVAL_SUBMITTED_DATE_REQUIRED</fullName>
+    <active>true</active>
+    <description>PRE_APPROVAL_SUBMITTED_DATE_REQUIRED</description>
+    <errorConditionFormula>AND(
+  $Setup.Bypass_Configuration__c.Case_Validation_Rule__c	= FALSE,
+  Pre_approval_submitted__c ,
+ ISBLANK( Pre_approval_submitted_date__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Pre_approval_submitted_date__c</errorDisplayField>
+    <errorMessage>Pre-Approval Submitted Date is Required.</errorMessage>
+</ValidationRule>

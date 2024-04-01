@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Single Level</fullName>
+        <default>false</default>
+        <label>Single Level</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi-level</fullName>
+        <default>false</default>
+        <label>Multi-level</label>
+    </customValue>
+    <masterLabel>No. of Levels</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Case auto response rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email To Case</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>S3 Retail Queue</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>wellington-burgos@hotmail.com</replyToEmail>
+            <senderEmail>wellingtonburgos@gmail.com</senderEmail>
+            <senderName>Fluence Support Case Submitted</senderName>
+            <template>unfiled$public/General_Case_Creation_Notification_to_Customer_Web_to_Case_Email_to_Case</template>
+        </ruleEntry>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>sen survey to close to customer</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <formula>AND(RecordType.DeveloperName = &quot;General&quot;,  ISPICKVAL( Status ,&quot;Closed to Customer&quot;),  Account.RecordType.Name &lt;&gt; &quot;Reseller&quot;)</formula>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>barbara.neves.oliveira@gmail.com</senderEmail>
+            <senderName>Customer Satisfaction</senderName>
+            <template>unfiled$public/Email_Notification_on_Case_Resolved</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

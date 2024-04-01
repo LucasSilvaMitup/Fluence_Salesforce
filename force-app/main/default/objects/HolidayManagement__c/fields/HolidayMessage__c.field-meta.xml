@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HolidayMessage__c</fullName>
+    <description>Stores the holiday message that needs to appear in email notification.</description>
+    <externalId>false</externalId>
+    <label>Holiday Message</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

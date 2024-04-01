@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Initiative__c</fullName>
+    <externalId>false</externalId>
+    <label>Company Initiative</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Validation Study</fullName>
+                <default>false</default>
+                <label>Validation Study</label>
+            </value>
+            <value>
+                <fullName>Financing</fullName>
+                <default>false</default>
+                <label>Financing</label>
+            </value>
+            <value>
+                <fullName>Q4 Partner SPA</fullName>
+                <default>false</default>
+                <label>Q4 Partner SPA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

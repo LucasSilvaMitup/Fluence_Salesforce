@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CS_Queue_Quote_Activity_Notifications_on_Opportunity</fullName>
+        <description>CS Queue Quote Activity Notifications on Opportunity</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/CS_Queue_Quote_Activity_Notifications</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_notification_on_Opportunity_approved_process</fullName>
+        <description>Email notification on Opportunity approved process</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Approved_Approval_Flow</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_notification_on_Opportunity_approved_process_EMEA</fullName>
+        <description>Email notification on Opportunity approved process_EMEA</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Approved_Approval_Flow</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_notification_on_Opportunity_approved_process_NON_EMEA</fullName>
+        <description>Email notification on Opportunity approved process_NON EMEA</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Approved_Approval_Flow</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_notification_on_Opportunity_rejected_process</fullName>
+        <description>Email notification on Opportunity rejected process</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Rejected_Approval_Flow</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_notification_on_Opportunity_rejected_process_EMEA</fullName>
+        <description>Email notification on Opportunity rejected process_EMEA</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Rejected_Approval_Flow</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_notification_on_Opportunity_rejected_process_NON_EMEA</fullName>
+        <description>Email notification on Opportunity rejected process_NON EMEA</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Rejected_Approval_Flow</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_notification_when_MSA_Special_Pricing_Applies</fullName>
+        <description>Email notification when MSA Special Pricing Applies</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/MSA_Special_Pricing_Applies</template>
+    </alerts>
+    <alerts>
+        <fullName>Final_Approval_Notification</fullName>
+        <description>Final Approval Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Final_Approval_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Final_Approval_Notification_New</fullName>
+        <description>Final Approval Notification New</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Final_Approval_Template_New</template>
+    </alerts>
+    <alerts>
+        <fullName>Final_Rejection_Notification</fullName>
+        <description>Final Rejection Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Final_Rejected_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Final_Rejection_Notification_New</fullName>
+        <description>Final Rejection Notification New</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Final_Rejected_Template_New</template>
+    </alerts>
+    <alerts>
+        <fullName>First_Reminder_to_Opportunity_Team</fullName>
+        <description>First Reminder to Opportunity Team</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_First_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_when_Reseller_Field_Change</fullName>
+        <description>Notification_when_Reseller_Field_Change</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>krista.olcott@fluence-led.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Krista_Notified_on_Reseller_changes</template>
+    </alerts>
+    <alerts>
+        <fullName>SPM_notification_on_Opportunity</fullName>
+        <description>SPM notification on Opportunity</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SPM_notification_on_Opportunity</template>
+    </alerts>
+    <alerts>
+        <fullName>Second_Reminder_to_Opportunity_Team</fullName>
+        <description>Second Reminder to Opportunity Team</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Second_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Third_Reminder_to_Opportunity_Team</fullName>
+        <description>Third Reminder to Opportunity Team</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>S3</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Third_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>opportunity</fullName>
+        <description>60% probability or higher</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opp_60_or_higher</template>
+    </alerts>
+    <alerts>
+        <fullName>opportunity_closed</fullName>
+        <description>60% probability or higher and Closed Lost</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>lucas.oliveira@mitup.pt</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>system.admin@fluencebioengineering.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/X60_probability_or_Higher_and_Close_Lost</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Skip_Approval_Step</fullName>
+        <field>Skip_Approval_Step__c</field>
+        <literalValue>1</literalValue>
+        <name>Skip Approval Step</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_Date</fullName>
+        <field>TECH_Approval_Status_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Approval Status Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Opportunity_Approved_Status</fullName>
+        <field>TECH_Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update Opportunity Approved Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Opportunity_Rejected_Status</fullName>
+        <field>TECH_Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Update Opportunity Rejected Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

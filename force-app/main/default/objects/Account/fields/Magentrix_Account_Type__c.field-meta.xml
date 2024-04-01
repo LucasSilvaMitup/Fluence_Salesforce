@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Magentrix_Account_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Magentrix Account Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Distributor/Reseller</fullName>
+                <default>false</default>
+                <label>Distributor/Reseller</label>
+            </value>
+            <value>
+                <fullName>Network</fullName>
+                <default>false</default>
+                <label>Network</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

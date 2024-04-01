@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PREVENT_PROBABILITY_OUT_OF_RANGE</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(AND(ISPICKVAL(StageName,&quot;Discovery&quot;),OR(Probability &lt;0.01,Probability&gt;0.30)),
+AND(ISPICKVAL(StageName,&quot;Solutions Design and Quoting&quot;),OR(Probability &lt;0.30,Probability&gt;0.50)),AND(ISPICKVAL(StageName,&quot;Customer Review&quot;),OR(Probability &lt;0.50,Probability&gt;0.70)),AND(ISPICKVAL(StageName,&quot;Customer Commitment&quot;),OR(Probability &lt;0.70,Probability&gt;0.90)),AND(ISPICKVAL(StageName,&quot;Received PO&quot;),OR(Probability &lt;&gt;0.95)),
+AND(ISPICKVAL(StageName,&quot;Promoted to Order&quot;),OR(Probability &lt;&gt;1))
+
+)</errorConditionFormula>
+    <errorDisplayField>Probability</errorDisplayField>
+    <errorMessage>Probability outside the allowed range for this phase</errorMessage>
+</ValidationRule>

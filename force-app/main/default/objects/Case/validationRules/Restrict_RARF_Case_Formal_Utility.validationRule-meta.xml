@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_RARF_Case_Formal_Utility</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(AND(Opportunity__r.Probability &lt; 0.60, ISPICKVAL( Rebate_Services_Needed__c , &quot;Rebate Application&quot;)),true,false )</errorConditionFormula>
+    <errorDisplayField>Rebate_Service_Assistance_Type__c</errorDisplayField>
+    <errorMessage>The opportunity must be at Customer Review before rebate pre-approval application may be initiated</errorMessage>
+</ValidationRule>

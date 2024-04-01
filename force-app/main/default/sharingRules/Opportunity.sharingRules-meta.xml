@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Share_all_opportunities_with_CS_users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share all opportunities with CS users</label>
+        <sharedTo>
+            <roleAndSubordinates>CS_Managers</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Executive</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_all_opportunities_with_S3_users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share all opportunities with S3 users</label>
+        <sharedTo>
+            <roleAndSubordinates>S3_Manager</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Executive</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

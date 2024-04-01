@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EMEA_Authorized_Reseller_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>EMEA – Authorized Reseller</label>
+    <queue>EMEA_Authorized_Reseller</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

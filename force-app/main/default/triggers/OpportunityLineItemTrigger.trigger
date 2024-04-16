@@ -9,7 +9,8 @@
 *	------------------------------------------------------------------------------------------
 *	Modification Log:
 *	==========================================================================================
-*	@Version		@Author			@Date			@Reason 
+*	@Version		@Author			@Date			@Reason
+*	1.0             Lucas Silva     08/04/2024      Commented line in before context - SSC-1303
 *	==========================================================================================
 */
 trigger OpportunityLineItemTrigger on OpportunityLineItem (before insert, before update, after insert, after update, after delete) {
@@ -29,7 +30,7 @@ trigger OpportunityLineItemTrigger on OpportunityLineItem (before insert, before
             //Handle Before Update trigger event
             if(trigger.isUpdate)
             {
-                handler.handleOpportunityLineItemBeforeUpdate(trigger.newMap,trigger.oldMap); 
+                //handler.handleOpportunityLineItemBeforeUpdate(trigger.newMap,trigger.oldMap); 
             } 
         }
         //After operations

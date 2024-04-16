@@ -10,10 +10,12 @@
 *   ==========================================================================================
 *   @Version        @Author         @Date           @Reason
 *   -              Lucas Silva     18/01/2024      Added getOppLineItemByProduct2Ids() method
+*   ---            Lucas Silva     08/04/2024      Commented class - TO DO: Remove this class
+*                                                  from org once that is no used anymore.
 *   ==========================================================================================
 */
 public class OpportunityLineItemDAO {
-    private static final OpportunityLineItemDAO instance = new OpportunityLineItemDAO();    
+    /*private static final OpportunityLineItemDAO instance = new OpportunityLineItemDAO();    
     private OpportunityLineItemDAO(){}
     
     public static OpportunityLineItemDAO getInstance() {
@@ -39,5 +41,5 @@ public class OpportunityLineItemDAO {
 
     public List<OpportunityLineItem> getOppLineItemByProduct2Ids(Set<Id> product2Ids){
         return [SELECT Id, OpportunityId FROM OpportunityLineItem WHERE Product2Id IN :product2Ids AND Opportunity.IsClosed = FALSE];
-    }
+    }*/
 }

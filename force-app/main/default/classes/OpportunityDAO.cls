@@ -10,11 +10,13 @@
 *	Modification Log:
 *	==========================================================================================
 *	@Version		@Author			@Date			@Reason
+*    ---             Lucas Silva    08/04/2024      Commented class - TO DO: Remove this class
+*                                                   from org once that is no used anymore.
 *	==========================================================================================
 */
 public with sharing class OpportunityDAO {
 
-    public static OpportunityDAO getInstance(){
+    /*public static OpportunityDAO getInstance(){
         return new OpportunityDAO();
     }
 
@@ -23,6 +25,6 @@ public with sharing class OpportunityDAO {
                (SELECT Id, UnitPrice, Quantity, Product2Id, Product2.AMEA_ICOS__c, Product2.EMEA_ICOS__c, Opportunity.Pricebook2Id
                FROM OpportunityLineItems WHERE Product2.Name !=: Label.Surcharge_Product_Name)
                FROM Opportunity WHERE Id IN :opportunityIds];
-    }
+    }*/
 
 }

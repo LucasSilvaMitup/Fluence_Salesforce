@@ -11,4 +11,8 @@
         <label></label>
         <name>SendEmail</name>
     </quickActions>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>PreventInsertQuoteForClosedOpp</name>
+    </validationRules>
 </CustomObjectTranslation>

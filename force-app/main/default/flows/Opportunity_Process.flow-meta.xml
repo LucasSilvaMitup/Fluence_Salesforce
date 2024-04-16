@@ -316,7 +316,7 @@
                 <stringValue>$Label.LDRF </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_13_myRule_12_A1_4374171601</name>
+        <name>formula_13_myRule_12_A1_8178642667</name>
         <dataType>String</dataType>
         <expression>{!$Label.LDRF}</expression>
     </formulas>
@@ -327,7 +327,7 @@
                 <stringValue>$Label.RARF </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_16_myRule_15_A1_5711341556</name>
+        <name>formula_16_myRule_15_A1_6082123169</name>
         <dataType>String</dataType>
         <expression>{!$Label.RARF}</expression>
     </formulas>
@@ -338,7 +338,7 @@
                 <stringValue>$Label.General </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_19_myRule_18_A1_5436756582</name>
+        <name>formula_19_myRule_18_A1_2898035521</name>
         <dataType>String</dataType>
         <expression>{!$Label.General}</expression>
     </formulas>
@@ -349,7 +349,7 @@
                 <stringValue>$Label.RARF </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_22_myRule_21_A1_4499813916</name>
+        <name>formula_22_myRule_21_A1_1369891619</name>
         <dataType>String</dataType>
         <expression>{!$Label.RARF}</expression>
     </formulas>
@@ -360,7 +360,7 @@
                 <stringValue>$Label.RARF </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_25_myRule_24_A1_9794449047</name>
+        <name>formula_25_myRule_24_A1_5726951297</name>
         <dataType>String</dataType>
         <expression>{!$Label.RARF}</expression>
     </formulas>
@@ -371,7 +371,7 @@
                 <stringValue>$Label.RARF </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_28_myRule_27_A1_5575661982</name>
+        <name>formula_28_myRule_27_A1_5378745454</name>
         <dataType>String</dataType>
         <expression>{!$Label.RARF}</expression>
     </formulas>
@@ -382,7 +382,7 @@
                 <stringValue>ADDMONTHS([Opportunity].CreatedDate,24) </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_A1_9227152771</name>
+        <name>formula_2_myRule_1_A1_5235840944</name>
         <dataType>Date</dataType>
         <expression>ADDMONTHS({!myVariable_current.CreatedDate},24)</expression>
     </formulas>
@@ -393,7 +393,7 @@
                 <stringValue>TODAY() </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_5_myRule_4_A2_2107136601</name>
+        <name>formula_5_myRule_4_A2_8704834669</name>
         <dataType>Date</dataType>
         <expression>TODAY()</expression>
     </formulas>
@@ -404,7 +404,7 @@
                 <stringValue>$Label.LDRF </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_6_myRule_4_A1_0431215027</name>
+        <name>formula_6_myRule_4_A1_0743907269</name>
         <dataType>String</dataType>
         <expression>{!$Label.LDRF}</expression>
     </formulas>
@@ -530,12 +530,18 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>NOT($Setup.Bypass_Configuration__c.Opportunity_Process__c)</stringValue>
+                <stringValue>AND(
+NOT($Setup.Bypass_Configuration__c.Opportunity_Process__c),
+ISCHANGED([Opportunity].AccountId)
+)</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_myRule_18</name>
         <dataType>Boolean</dataType>
-        <expression>NOT({!$Setup.Bypass_Configuration__c.Opportunity_Process__c})</expression>
+        <expression>AND(
+NOT({!$Setup.Bypass_Configuration__c.Opportunity_Process__c}),
+ISCHANGED({!myVariable_current.AccountId})
+)</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -666,7 +672,7 @@
    ISCHANGED({!myVariable_current.OwnerId} ) 
 )</expression>
     </formulas>
-    <interviewLabel>Opportunity_Process-12_InterviewLabel</interviewLabel>
+    <interviewLabel>Opportunity_Process-16_InterviewLabel</interviewLabel>
     <label>Opportunity Process</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -869,7 +875,7 @@
             <field>RecordTypeId</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>formula_13_myRule_12_A1_4374171601</elementReference>
+                <elementReference>formula_13_myRule_12_A1_8178642667</elementReference>
             </value>
         </filters>
         <inputAssignments>
@@ -1254,7 +1260,7 @@
             <field>RecordTypeId</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>formula_16_myRule_15_A1_5711341556</elementReference>
+                <elementReference>formula_16_myRule_15_A1_6082123169</elementReference>
             </value>
         </filters>
         <inputAssignments>
@@ -1711,7 +1717,56 @@
             <field>RecordTypeId</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>formula_19_myRule_18_A1_5436756582</elementReference>
+                <elementReference>formula_19_myRule_18_A1_2898035521</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>inputDataType</name>
+                <value>
+                    <stringValue>Boolean</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Closed</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideType</name>
+                <value>
+                    <stringValue>Boolean</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>operatorDataType</name>
+                <value>
+                    <stringValue>Boolean</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Boolean</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>IsClosed</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
             </value>
         </filters>
         <inputAssignments>
@@ -1975,7 +2030,7 @@
             </processMetadataValues>
             <field>CloseDate</field>
             <value>
-                <elementReference>formula_2_myRule_1_A1_9227152771</elementReference>
+                <elementReference>formula_2_myRule_1_A1_5235840944</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -2252,7 +2307,7 @@
             <field>RecordTypeId</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>formula_22_myRule_21_A1_4499813916</elementReference>
+                <elementReference>formula_22_myRule_21_A1_1369891619</elementReference>
             </value>
         </filters>
         <inputAssignments>
@@ -2382,7 +2437,7 @@
             <field>RecordTypeId</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>formula_25_myRule_24_A1_9794449047</elementReference>
+                <elementReference>formula_25_myRule_24_A1_5726951297</elementReference>
             </value>
         </filters>
         <inputAssignments>
@@ -2512,7 +2567,7 @@
             <field>RecordTypeId</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>formula_28_myRule_27_A1_5575661982</elementReference>
+                <elementReference>formula_28_myRule_27_A1_5378745454</elementReference>
             </value>
         </filters>
         <inputAssignments>
@@ -2645,7 +2700,7 @@
             <field>RecordTypeId</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>formula_6_myRule_4_A1_0431215027</elementReference>
+                <elementReference>formula_6_myRule_4_A1_0743907269</elementReference>
             </value>
         </filters>
         <filters>
@@ -2814,7 +2869,7 @@
             </processMetadataValues>
             <field>CloseDate</field>
             <value>
-                <elementReference>formula_5_myRule_4_A2_2107136601</elementReference>
+                <elementReference>formula_5_myRule_4_A2_8704834669</elementReference>
             </value>
         </inputAssignments>
         <object>Opportunity</object>

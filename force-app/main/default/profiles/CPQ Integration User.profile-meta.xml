@@ -1861,6 +1861,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.Opportunity_Owner2__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.Opportunity_Owner__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4661,6 +4666,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>OpportunityLineItem.Item_SAP_Item_n__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>OpportunityLineItem.ListPrice</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4671,12 +4681,32 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>OpportunityLineItem.Material__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>OpportunityLineItem.ProductCode</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>OpportunityLineItem.Product_Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpportunityLineItem.Product_Hierarchy__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpportunityLineItem.RCC__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpportunityLineItem.Sales_Unit__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -7361,6 +7391,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Notifications_on_stage_changes</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>OppLineItemAfterInsertTriggerCopyValuesFromQuoteLineItem</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

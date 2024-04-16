@@ -387,7 +387,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -1049,7 +1049,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -1715,7 +1715,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -2378,7 +2378,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -3044,7 +3044,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -3707,7 +3707,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -4373,7 +4373,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -5036,7 +5036,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -5702,7 +5702,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -6365,7 +6365,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -7031,7 +7031,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -7694,7 +7694,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -8356,7 +8356,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -9022,7 +9022,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -9689,7 +9689,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -10352,7 +10352,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -11018,7 +11018,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -11681,7 +11681,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -12343,7 +12343,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>
@@ -13005,7 +13005,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkBk</field>
-            <label>Customer Requested Ship Date</label>
+            <label>Customer Requested Delivery Date</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N5e00000clkCL</field>

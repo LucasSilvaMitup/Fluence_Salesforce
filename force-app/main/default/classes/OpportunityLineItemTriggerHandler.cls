@@ -13,6 +13,8 @@
 *	1.0             Lucas Silva     10-11-2023      Changed calculateOpportunityMargin() to calculateOpportunityCurrencyFields()
 *	1.1             Lucas Silva     02-02-2024      Removed logic in handleOpportunityLineItemAfterInsert(), handleOpportunityLineItemAfterUpdate()
 *                                                   and handleOpportunityLineItemAfterDelete() methods
+*   ---             Lucas Silva    08/04/2024       Commented logic in handleOpportunityLineItemBeforeUpdate() - TO DO: Remove this class from org once that 
+*													is no used anymore.
 *	==========================================================================================
 */
 public class OpportunityLineItemTriggerHandler {
@@ -29,7 +31,7 @@ public class OpportunityLineItemTriggerHandler {
     public void handleOpportunityLineItemBeforeUpdate(Map<Id,OpportunityLineItem> newOpportunityLineItemsMap,Map<Id,OpportunityLineItem> oldOpportunityLineItemsMap)
     {        
         //prepare sets of OpportunityLineItem Ids from trigger.newMap for which Quantity has been updated
-        List<OpportunityLineItem> lstOpportunityLineItemsToUpdate = new List<OpportunityLineItem>();
+        /*List<OpportunityLineItem> lstOpportunityLineItemsToUpdate = new List<OpportunityLineItem>();
         for(OpportunityLineItem oppLineItem : newOpportunityLineItemsMap.values())
         {
             if(oldOpportunityLineItemsMap.containsKey(oppLineItem.Id))
@@ -44,7 +46,7 @@ public class OpportunityLineItemTriggerHandler {
         if(!lstOpportunityLineItemsToUpdate.isEmpty())
         {
             OpportunityLineItemBO.calculateProductDiscount(lstOpportunityLineItemsToUpdate);
-        }
+        }*/
     }
     //Method to handle AfterInsert event for Opportunity
     public void handleOpportunityLineItemAfterInsert(List<OpportunityLineItem> newOpportunityLineItems)

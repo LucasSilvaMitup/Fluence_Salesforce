@@ -2358,6 +2358,11 @@
             <field>Rebate_Partner__c</field>
             <table>Opportunity.RARFandLDRFCases__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity_Owner2__c</field>
+            <table>Opportunity.RARFandLDRFCases__r</table>
+        </columns>
         <masterLabel>Cases</masterLabel>
     </sections>
 </ReportType>

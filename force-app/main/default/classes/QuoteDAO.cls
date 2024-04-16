@@ -7,12 +7,14 @@
 *
 *	------------------------------------------------------------------------------------------
 *	Modification Log:
-*	@Author:
-*	@Date: 
-*	@Reason: 
-*/ 
+*	==========================================================================================
+*	@Version		@Author			@Date			@Reason
+*    ---             Lucas Silva    08/04/2024      Commented class - TO DO: Remove this class
+*                                                   from org once that is no used anymore.
+*	==========================================================================================
+*/
 public class QuoteDAO {
-    private static final QuoteDAO instance = new QuoteDAO();    
+    /*private static final QuoteDAO instance = new QuoteDAO();    
     private QuoteDAO(){}
     
     public static QuoteDAO getInstance() {
@@ -22,5 +24,5 @@ public class QuoteDAO {
     {
         return [SELECT Id, Tax, ShippingPostalCode, ShippingStateCode, ShippingHandling, TotalPrice FROM Quote 
                 WHERE Id IN:quoteIds];
-    }
+    }*/
 }

@@ -12,11 +12,12 @@
 *	@Version		@Author			@Date			@Reason
 *	-              Lucas Silva     11/01/2024      Changed createQuoteLineItems() adding SAPQuoteLineItem__c = true
 *	-              Lucas Silva     25/01/2024      Remove createAIRecord() method
+*	-              Lucas Silva     08/04/2024      Changed createAccounts() and createOppLineItems() methods
 *	==========================================================================================
 */
 @isTest
 public class TestDataFactory {
-    
+
     /**
      * *******************************************************
      * This method is to create test data for SYS ADMIN USER
@@ -53,9 +54,8 @@ public class TestDataFactory {
                 acc.Name = 'Test Account+++ '+i;
                 acc.Region__c = 'APAC';
                 acc.Application__c = 'Indoor';
-                acc.Channel__c = 'System Integrator';
+                acc.Channel__c = 'Partner';
                 acc.Market__c = 'Cannabis';
-                acc.Partner_Status__c = 'Signed';
                 acc.BillingCountry = 'United States';
                 acc.BillingCity = 'New York';
                 acc.BillingState = 'New York';
@@ -373,8 +373,6 @@ public class TestDataFactory {
     public static List<OpportunityLineItem> createOppLineItems(Integer count, Boolean doInsert, Id OppId)
     {
         List<OpportunityLineItem> oliList = new List<OpportunityLineItem>();
-        System.runAs(createUser())
-        {            
             Opportunity opp = [select id,Pricebook2Id from opportunity where id =: OppId];
             opp.Pricebook2Id = Test.getStandardPricebookId();
             update opp;
@@ -390,7 +388,6 @@ public class TestDataFactory {
             {
                 insert oliList ;
             }
-        }        
         return oliList ;
     }
     
@@ -407,7 +404,7 @@ public class TestDataFactory {
         {
             for(Integer i = 0 ; i < count ; i++)
             {
-                Price_Book_Automation__c pba = new Price_Book_Automation__c(Channel__c = 'System Integrator', Market__c = 'Cannabis', Partner_Status__c = 'Signed', Price_Book__c = Test.getStandardPricebookId(), Region__c = 'APAC', Key__c = 'PBA '+i, currencyisocode = 'USD');
+                Price_Book_Automation__c pba = new Price_Book_Automation__c(Channel__c = 'Partner', Market__c = 'Cannabis', Price_Book__c = Test.getStandardPricebookId(), Region__c = 'APAC', Key__c = 'PBA '+i, currencyisocode = 'USD');
                 pbaList.add(pba);
             }
             if(doInsert)
@@ -490,4 +487,5 @@ public class TestDataFactory {
         }
         return spamEmailList;
     }
+    
 }

@@ -11,10 +11,9 @@
         <label>Partner</label>
     </customValue>
     <customValue>
-        <fullName>Ecomm</fullName>
+        <fullName>Web - Update</fullName>
         <default>false</default>
-        <isActive>false</isActive>
-        <label>E-commerce</label>
+        <label>Web - Update</label>
     </customValue>
     <customValue>
         <fullName>OEM</fullName>
@@ -77,12 +76,6 @@
         <label>Research</label>
     </customValue>
     <customValue>
-        <fullName>Web - Update</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Web - Update</label>
-    </customValue>
-    <customValue>
         <fullName>OSME</fullName>
         <default>false</default>
         <isActive>false</isActive>
@@ -93,6 +86,12 @@
         <default>false</default>
         <isActive>false</isActive>
         <label>Systems Integrator</label>
+    </customValue>
+    <customValue>
+        <fullName>Ecomm</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>E-commerce</label>
     </customValue>
     <masterLabel>Channel</masterLabel>
     <sorted>false</sorted>

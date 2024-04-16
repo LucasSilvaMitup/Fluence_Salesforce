@@ -3,6 +3,6 @@
     <fullName>PreventChangesByNonAdmins</fullName>
     <active>true</active>
     <description>Prevent any changes made by non admins</description>
-    <errorConditionFormula>$Profile.Name &lt;&gt; &apos;System Administrator&apos;</errorConditionFormula>
+    <errorConditionFormula>NOT($Setup.Bypass_Configuration__c.OpportunityLineItem_Validation_Rule__c)</errorConditionFormula>
     <errorMessage>You don&apos;t have the necessary permission to create or edit opportunity products.</errorMessage>
 </ValidationRule>

@@ -441,6 +441,7 @@
         <excludeButtons>NewQuote</excludeButtons>
         <fields>QUOTE.QUOTENUMBER</fields>
         <fields>QUOTE.NAME</fields>
+        <fields>QUOTE.ISSYNCING</fields>
         <fields>QUOTE.EXPIRATIONDATE</fields>
         <fields>QUOTE.SUBTOTAL</fields>
         <fields>QUOTE.TOTALPRICE</fields>

@@ -61,10 +61,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Pricebook2Id</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Forecast_to_GUF__c</field>
             </layoutItems>
             <layoutItems>
@@ -408,6 +404,7 @@
         <excludeButtons>NewQuote</excludeButtons>
         <fields>QUOTE.QUOTENUMBER</fields>
         <fields>QUOTE.NAME</fields>
+        <fields>QUOTE.ISSYNCING</fields>
         <fields>QUOTE.EXPIRATIONDATE</fields>
         <fields>QUOTE.SUBTOTAL</fields>
         <fields>QUOTE.TOTALPRICE</fields>

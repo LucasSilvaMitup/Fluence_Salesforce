@@ -11,6 +11,7 @@
 *	==========================================================================================
 *	@Version		@Author			@Date			@Reason
 *	1.0             Lucas Silva     10-11-2023      Insert Bypass_Configuration__c in testhandlerMethods()
+*	1.1             Lucas Silva     08-04-2024      Changed testhandlerMethods() method
 *	==========================================================================================
 */
 @isTest
@@ -38,7 +39,7 @@ public class TestOpportunityLineItemTrigger {
     
     @isTest
     public static void testhandlerMethods()
-    {        
+    {   
         System.runAs(TestDataFactory.createUser())
         {
             Opportunity opp = [Select id from Opportunity limit 1];
@@ -46,6 +47,7 @@ public class TestOpportunityLineItemTrigger {
             //Create ByPass record to bypass unnecessary processes
             Bypass_Configuration__c bypassConfiguration = new Bypass_Configuration__c();
             bypassConfiguration.Opportunity_Process__c = true;
+            bypassConfiguration.OpportunityLineItem_Validation_Rule__c = true;
             bypassConfiguration.SetupOwnerId = UserInfo.getUserId();
         	insert bypassConfiguration;
             
